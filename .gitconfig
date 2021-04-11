@@ -1,0 +1,6 @@
+[user]
+	name = David Härer
+	email = david@familie-haerer.de
+[alias]
+	root = "rev-parse --show-toplevel"
+	update = "!f() { git add ${1} && git commit -m ${1}; }; f"
