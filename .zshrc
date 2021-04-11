@@ -1,10 +1,19 @@
 # Manage your resources.
 alias config="git --git-dir=$HOME/config.git --work-tree=$HOME"
 
+# Show my resources at every directory change.
+function chpwd() {
+    clear
+    emulate -L zsh
+    ls -a
+}
+
 # Hide no resources.
 alias ls="ls -a"
 
 # Navigate quickly.
+alias e="exit"
+alias c="clear && ls -a"
 alias d="cd"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -13,34 +22,27 @@ alias ...="cd ../.."
 export EDITOR="nvim"
 export BROWSER="brave-browser"
 
-# Take notes in one place.
-export NOTES="$HOME/$(pass notes)"
+# Use your tools quickly.
+alias v="$EDITOR"
 
 # Define your own path.
 export PATH="$HOME/scripts:$PATH"
 
-# Create new resources.
+# Work on resources quickly.
+alias a="append"
+alias o="xdg-open"
 alias n="touch"
 alias nd="mkdir"
-
-# Append to resources.
-alias a="append"
-alias an="append $NOTES"
-
-# Open resources.
-alias o="xdg-open"
-alias on="$EDITOR $NOTES"
-
-# Exit resources. 
-alias e="clear"
-alias et="exit"
 
 # Enjoy your prompt. 
 eval "$(starship init zsh)"
 
-# Use Python in a venv.
-source "$HOME/.config/python/base/bin/activate"
+# Take notes in one place.
+export NOTES="$HOME/$(pass notes)"
+alias an="append "$NOTES""
+alias on="$EDITOR "$NOTES""
 
-# Now start working.
+# Start working.
+source "$HOME/.config/python/base/bin/activate"
 ls
 
