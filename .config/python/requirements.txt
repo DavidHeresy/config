@@ -1,0 +1,8 @@
+typer
+fastapi
+pandas
+numpy
+scipy
+pydantic
+pytest
+pylint
