@@ -9,15 +9,15 @@ alias d="cd"
 alias ..="cd .."
 alias ...="cd ../.."
 
+# Assemble your toolbox.
+export EDITOR="nvim"
+export BROWSER="brave-browser"
+
 # Take notes in one place.
 export NOTES="$HOME/$(pass notes)"
 
 # Define your own path.
 export PATH="$HOME/scripts:$PATH"
-
-# Assemble your toolbox.
-export EDITOR="nvim"
-export BROWSER="brave-browser"
 
 # Create new resources.
 alias n="touch"
@@ -34,3 +34,13 @@ alias on="$EDITOR $NOTES"
 # Exit resources. 
 alias e="clear"
 alias et="exit"
+
+# Enjoy your prompt. 
+eval "$(starship init zsh)"
+
+# Use Python in a venv.
+source "$HOME/.config/python/base/bin/activate"
+
+# Now start working.
+ls
+
