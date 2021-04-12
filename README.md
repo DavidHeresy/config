@@ -47,3 +47,8 @@ config pull
 config push
 ```
 
+## Todo
+
+- [ ] `.config/starship.toml`
+- [ ] `.config/nvim/init.vim`
+
