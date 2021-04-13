@@ -1,22 +1,25 @@
-# Manage your resources.
-alias config="git --git-dir=$HOME/config.git --work-tree=$HOME"
+# Manage config files in a bare Git repository.
+alias config="git --git-dir=$HOME/.config.git --work-tree=$HOME"
 
-# Show my resources at every directory change.
+# Use exa to list resources.
+alias l="exa"
+alias la="exa -a"
+alias ll="exa -l"
+alias lla="exa -la"
+
+# List resources at every directory change.
 function chpwd() {
     clear
     emulate -L zsh
-    ls -a
+    l
 }
-
-# Hide no resources.
-alias ls="ls -a"
 
 # Use UTF-8 in tmux.
 alias tmux="tmux -u"
 
 # Navigate quickly.
 alias e="exit"
-alias c="clear && ls -a"
+alias c="clear && l"
 alias d="cd"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -49,5 +52,5 @@ alias on="$EDITOR "$NOTES""
 
 # Start working.
 source "$HOME/.config/python/base/bin/activate"
-ls
+l
 
