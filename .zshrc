@@ -11,6 +11,9 @@ function chpwd() {
 # Hide no resources.
 alias ls="ls -a"
 
+# Use UTF-8 in tmux.
+alias tmux="tmux -u"
+
 # Navigate quickly.
 alias e="exit"
 alias c="clear && ls -a"
