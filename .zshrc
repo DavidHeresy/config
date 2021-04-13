@@ -37,6 +37,7 @@ alias o="xdg-open"
 alias n="touch"
 alias nd="mkdir"
 alias cm="chmod"
+alias cu="config update"
 
 # Enjoy your prompt. 
 eval "$(starship init zsh)"
