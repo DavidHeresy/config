@@ -34,10 +34,10 @@ nnoremap B ^
 nnoremap E $
 
 " Move fast in a file.
-nnoremap J jjjjjjj
-nnoremap K kkkkkkk
-nnoremap H (
-nnoremap L )
+map J jjjjjjj
+map K kkkkkkk
+map H (
+map L )
 
 " Navigate fast between buffers.
 
