@@ -1,5 +1,15 @@
 # Home Config
 
+<!-- vim-markdown-toc GitLab -->
+
+* [Setup](#setup)
+* [Usage](#usage)
+* [Gnome Theme](#gnome-theme)
+* [NeoVim Plugins](#neovim-plugins)
+* [Todo](#todo)
+
+<!-- vim-markdown-toc -->
+
 ## Setup
 
 In `$HOME`, create a bare `config.git` repository:
@@ -46,6 +56,10 @@ config commit -m "Message."
 config pull
 config push
 ```
+
+## Gnome Theme
+
+Nordic-darker
 
 ## NeoVim Plugins
 
