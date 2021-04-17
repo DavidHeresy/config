@@ -39,10 +39,9 @@ export PATH="$HOME/scripts:$PATH"
 # Work on resources quickly.
 alias a="append"
 alias o="xdg-open"
-alias n="touch"
-alias nd="mkdir"
+alias t="touch"
+alias md="mkdir"
 alias cm="chmod"
-alias cu="config update"
 
 # Enjoy your prompt. 
 eval "$(starship init zsh)"
