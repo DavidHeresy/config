@@ -1,0 +1,9 @@
+#!/bin/sh
+
+dir="$1"
+
+for file in "$dir"
+do
+    grep "ALIAS: "
+done
+
