@@ -1,3 +1,6 @@
+# Manage $HOME files with a bare Git repository.
+alias home="git --git-dir=$HOME/.home.git --work-tree=$HOME"
+
 # Export environment variables.
 set -a
 . $HOME/settings.env
@@ -7,9 +10,6 @@ set +a
 # Check environment variables.
 [[ -z "$EDITOR" ]]  && echo "Missing 'EDITOR' in 'settings.env' file!"
 [[ -z "$BROWSER" ]] && echo "Missing 'BROWSER' in 'settings.env' file!"
-
-# Manage config files in a bare Git repository.
-alias config="git --git-dir=$HOME/.config.git --work-tree=$HOME"
 
 # Set root crontab file.
 sudo crontab -u root $HOME/.config/crontab
@@ -44,12 +44,14 @@ export BROWSER="brave-browser"
 export PATH="$HOME/scripts:$PATH"
 
 # Work on resources quickly.
-alias a="append"
+alias h="home"
+alias a="scripts/append"
 alias o="xdg-open"
 alias v="$EDITOR"
 alias t="touch"
 alias md="mkdir"
 alias cm="chmod"
+alias u="source .zshrc" # IDEA: source scripts/update
 
 # Enjoy your prompt. 
 eval "$(starship init zsh)"
