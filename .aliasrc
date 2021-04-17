@@ -1,0 +1,26 @@
+# Manage $HOME files with a bare Git repository.
+alias home="git --git-dir=$HOME/.home.git --work-tree=$HOME"
+
+# Show hidden files.
+alias ls="ls -a"
+alias l="exa -a"
+alias ll="exa -la"
+
+# Use UTF-8 in tmux.
+alias tmux="tmux -u"
+
+# Use lots of shortcuts.
+alias e="exit"
+alias c="clear && l"
+alias d="cd"
+alias ..="cd .."
+alias ...="cd ../.."
+alias h="home"
+alias a="append"
+alias o="xdg-open"
+alias v="$EDITOR"
+alias t="touch"
+alias md="mkdir"
+alias cm="chmod"
+alias u="source .zshrc" # IDEA: source scripts/update
+
