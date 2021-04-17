@@ -1,3 +1,13 @@
+# Export environment variables.
+set -a
+. $HOME/settings.env
+. $HOME/secrets.env
+set +a
+
+# Check environment variables.
+[[ -z "$EDITOR" ]]  && echo "Missing 'EDITOR' in 'settings.env' file!"
+[[ -z "$BROWSER" ]] && echo "Missing 'BROWSER' in 'settings.env' file!"
+
 # Manage config files in a bare Git repository.
 alias config="git --git-dir=$HOME/.config.git --work-tree=$HOME"
 
@@ -30,15 +40,13 @@ alias ...="cd ../.."
 export EDITOR="nvim"
 export BROWSER="brave-browser"
 
-# Use your tools quickly.
-alias v="$EDITOR"
-
 # Define your own path.
 export PATH="$HOME/scripts:$PATH"
 
 # Work on resources quickly.
 alias a="append"
 alias o="xdg-open"
+alias v="$EDITOR"
 alias t="touch"
 alias md="mkdir"
 alias cm="chmod"
@@ -47,7 +55,6 @@ alias cm="chmod"
 eval "$(starship init zsh)"
 
 # Take notes in one place.
-export NOTES="$HOME/$(pass notes)"
 alias an="append "$NOTES""
 alias on="$EDITOR "$NOTES""
 
