@@ -1,11 +1,13 @@
 # Manage config files in a bare Git repository.
 alias config="git --git-dir=$HOME/.config.git --work-tree=$HOME"
 
-# Use exa to list resources.
-alias l="exa"
-alias la="exa -a"
-alias ll="exa -l"
-alias lla="exa -la"
+# Set root crontab file.
+sudo crontab -u root $HOME/.config/crontab
+
+# List resources.
+alias ls="ls -a"
+alias l="exa -a"
+alias ll="exa -la"
 
 # List resources at every directory change.
 function chpwd() {
