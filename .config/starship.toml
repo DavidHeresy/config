@@ -4,3 +4,19 @@ add_newline = false
 success_symbol = "[➜](bold green) "
 error_symbol = "[✗](bold red) "
 
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$nim\
+$nix_shell\
+$cmd_duration\
+$time\
+$status\
+$shell\
+$character"""
+
