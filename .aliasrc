@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Manage $HOME files with a bare Git repository.
 alias home="git --git-dir=$HOME/.home.git --work-tree=$HOME"
 
