@@ -5,3 +5,5 @@
 	root = "rev-parse --show-toplevel"
 	ignore = "!f() { echo "${1}" >> $(git root)/.gitignore; }; f"
 	update = "!f() { git add ${1} && git commit -m ${1}; }; f"
+    issues = "! ~/scripts/issues"
+
