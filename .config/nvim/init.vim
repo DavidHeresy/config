@@ -8,6 +8,10 @@ set wildmenu
 set cursorline
 set lazyredraw
 
+" Set default width.
+set colorcolumn=100
+set textwidth=99
+
 " Show matching parenthesis.
 set showmatch
 
@@ -40,10 +44,15 @@ map H (
 map L )
 
 " Navigate fast between buffers.
+" TODO: Setup tmux-vim-navigator
 
+" Toggle the NERDTree with [Ctrl] + [n].
+nnoremap <C-n> :NERDTreeToggle<CR>
 
+" Stop highlighting of search results with [no].
 nnoremap no :nohlsearch<CR>
 
+" TODO: What does 'set ruler' do?
 set ruler
 
 " TODO: Configure spell checking.
