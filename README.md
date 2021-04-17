@@ -1,4 +1,4 @@
-# Home Config
+# Home
 
 <!-- vim-markdown-toc GitLab -->
 
@@ -12,54 +12,33 @@
 
 ## Setup
 
-In `$HOME`, create a bare `config.git` repository:
+1. In `$HOME`, create a bare `config.git` repository:  
+   `git init --bare config.git`
 
-```bash
-git init --bare config.git
-```
+2. In `$HOME/.zshrc` (or `.bashrc`), set the `config` alias:
+   `alias config="git --git-dir=$HOME/config.git --work-tree=$HOME"`
 
-In `$HOME/.zshrc` (or `.bashrc`), set the `config` alias:
+3. Source the `.zshrc` to activate the new alias and hide undtracked files in the status info:
+   `config config status.showUntrackedFiles no`
 
-```bash
-alias config="git --git-dir=$HOME/config.git --work-tree=$HOME"
-```
-
-Source the `.zshrc` to activate the new alias and
-hide undtracked files in the status info:
-
-```bash
-config config status.showUntrackedFiles no
-```
-
-Add the `origin` remote to the repositrory:
-
-```bash
-config remote add origin <remote-uri>
-```
+4. Add the `origin` remote to the repositrory:
+   `config remote add origin <remote-uri>`
 
 ## Usage
 
 The `config` alias works like the normal `git` command:
 
-```bash
-# Show tracked files:
-config ls-files
+- `config ls-files`: Show files tracked by the `config` repository.
+- `config status`: Show the repository status (without untracked files).
+- `config update`: Custom [alias](git-update) to `add` and `commit` a file.
+- `config pull`: Pull changes from remote `origin`.
+- `config push`: Push changes to remote `origin`.
 
-# Show status (no untracked files):
-config status
-
-# Add and commit file-changes:
-config add <file>
-config commit -m "Message."
-
-# Pull and push origin:
-config pull
-config push
-```
+[git-update]: TODO: Add link to `git update` alias.
 
 ## Gnome Theme
 
-Nordic-darker
+TODO: Add link to "Nordic-darker" theme.
 
 ## NeoVim Plugins
 
