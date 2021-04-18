@@ -3,7 +3,7 @@
     email = david@familie-haerer.de
 [alias]
 	build  = "! $GIT/build"
-    todo   = "! $GIT/todo"
+    check  = "! $GIT/check"
 	ignore = "! $GIT/root"
 	remove = "! $GIT/remove"
 	readme = "! $GIT/readme"
