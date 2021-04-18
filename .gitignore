@@ -48,6 +48,6 @@
 .zcompdump
 .zsh_history
 projects/
-private/
+room/
 secret.env
 
