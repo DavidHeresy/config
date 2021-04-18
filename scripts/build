@@ -1,5 +1,5 @@
 #!/bin/sh
 
-git report
+git check
 git readme
 
