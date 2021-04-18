@@ -60,5 +60,5 @@ nnoremap zN [s
 " Remove trailing whitespace with ':NoTWS'.
 :command NoTWS :%s/\s\+$/
 
-" TODO: Checkout the CtrlP plugin.
+" IDEA: Checkout the CtrlP plugin.
 
