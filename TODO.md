@@ -8,6 +8,10 @@
 - [ ] [`#L59`](.config/nvim/init.vim#L59) **`TODO`** Add command 'NoTRW' to remove trailing whitespace.
 - [ ] [`#L60`](.config/nvim/init.vim#L60) **`TODO`** Checkout the CtrlP plugin.
 
+### [.gitconfig](.gitconfig)
+
+- [ ] [`#L4`](.gitconfig#L4) **`TODO`** Extract alias functions into scripts.
+
 ### [README.md](README.md)
 
 - [ ] [`#L26`](README.md#L26) **`TODO`** Add link to `git update` alias.
@@ -16,9 +20,13 @@
 
 - [ ] [`#L11`](USAGE.md#L11) **`TODO`** Add link to `git update` alias.
 
-### [scripts/check](scripts/check)
+### [git/README.md](git/README.md)
 
-- [ ] [`#L24`](scripts/check#L24) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
+- [ ] [`#L1`](git/README.md#L1) **`TODO`** Move scripts that are used git aliases from scripts to this directory.
+
+### [git/todo](git/todo)
+
+- [ ] [`#L24`](git/todo#L24) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
 
 ### [scripts/issues](scripts/issues)
 
