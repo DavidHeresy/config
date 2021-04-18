@@ -16,3 +16,5 @@
 
 - **[IDEA](git/todo#L24):** Add support for `--ignore-issue` comments for lines to ignore.
 
+[main cf77519] /home/david/TODO.md
+ 1 file changed, 12 deletions(-)
