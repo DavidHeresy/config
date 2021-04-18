@@ -5,8 +5,10 @@ alias home="git --git-dir=$HOME/.home.git --work-tree=$HOME"
 
 # Show hidden files.
 alias ls="ls -a"
-alias l="exa -a"
-alias ll="exa -la"
+alias l="exa"
+alias la="exa -a"
+alias ll="exa -l"
+alias lla="exa -la"
 
 # Use UTF-8 in tmux.
 alias tmux="tmux -u"
