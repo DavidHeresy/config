@@ -1,62 +1,55 @@
 #!/usr/bin/env bash
+# USAGE: git check "<LABEL>"
+# Examples for <LABEL>: TODO FIXME BUG NOTE XXX HACK FEATURE IDEA WISH
+# IDEA: Add support for `--ignore-<LABEL>` comments for lines to ignore.
 
-# Use bash strict mode.
-set -Eeuo pipefail
-
-# First argument defines the '$LABEL' to check.
-# Examples: TODO FIXME BUG NOTE XXX HACK FEATURE IDEA WISH
+# Define global variables.
 LABEL="$1"
-
-# Get the ROOT path of the repository.
 ROOT=$(git root)
-
-# Save and redirect 'stdout' to '$OUTFILE'
-exec 3>&1 1>"$ROOT/$LABEL.md"
-
-# Define the regex source and replace patterns.
-# IDEA: Add support for `--ignore-issue` comments for lines to ignore.
+FILENAME="$LABEL.md"
+FILE="$ROOT/$FILENAME"
+TMPFILE="$ROOT/$FILENAME.tmp"
 SOURCE_PATTERN='HEAD:\([^:]*\):\([0-9]*\):.*'"$LABEL"': \(.*\)'
 TARGET_PATTERN='- **[#L\2](\1#L\2):** \3'
 
-# Write the '$HEADING'.
-echo "## $LABEL's"
-echo ""
+# Save and redirect 'stdout'.
+exec 3>&1 1>"$FILE"
 
-# Loop over all files tracked in the repository that are not ignored.
+# Write the heading.
+echo "## $LABEL's"; echo ""
+
+# Loop over all files in the repository.
 for file in $(git ls-files)
 do
-    # Extract all lines of the file at HEAD, that have one of the defined issue labels.
-    git grep -n -E '('"$LABEL"'): ' "HEAD" -- "$ROOT/$file" \
-        > "$ROOT/$LABEL.tmp" \
-        || true
+    # Extract all lines of the file at HEAD, that have the defined '$LABEL'.
+    git grep -n -E "$LABEL: " "HEAD" -- "$ROOT/$file" > "$TMPFILE"
 
     # Continue with the next file, if no lines where extracted.
-    [ ! -s "$ROOT/$LABEL.tmp" ] \
-        && continue
+    [ ! -s "$TMPFILE" ] && continue
     
     # Write the subheading for the current file.
-    echo "### [$file]($file)"
-    echo ""
+    echo "### [$file]($file)"; echo ""
 
     # Transform and write the raw lines in Markdown.
-    cat "$ROOT/$LABEL.tmp" | sed 's/'"$SOURCE_PATTERN"'/'"$TARGET_PATTERN"'/'
+    cat "$TMPFILE" | sed 's/'"$SOURCE_PATTERN"'/'"$TARGET_PATTERN"'/'
     
     # Write a newline as a spacer for the next section.
     echo ""
 done
 
-# Clean-up the tmp files.
-rm -f "$ROOT/$LABEL.tmp"
-
-# Exit with error, if no lines were found.
-[ "$(wc -l "$ROOT/$LABEL.md")" = "2 $LABEL.md" ] \
-    && rm "$ROOT/$LABEL.md" \
-    && exit 1
-
 # Restore 'stdout'.
 exec 1>&3
 
-# Commit 'TODO.md' file.
-git add "$ROOT/$LABEL.md"
-git commit -m "$LABEL.md"
+# Clean-up the tmp files.
+rm -f "$TMPFILE"
+
+# Exit with error, if no lines were found.
+[ "$(wc -l "$FILE")" = "2 $FILE" ] \
+    && rm "$FILE" \
+    && git rm "$FILE" \
+    && git commit -m "rm '$FILENAME'" \
+    && exit 1
+
+# Commit '$FILE'.
+git add "$FILE" && git commit -m "$FILENAME"
 
