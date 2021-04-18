@@ -6,6 +6,7 @@ filetype plugin indent on
 set number
 set wildmenu
 set cursorline
+set ruler
 set lazyredraw
 
 " Set default width.
@@ -43,19 +44,21 @@ map K kkkkkkk
 map H (
 map L )
 
-" Navigate fast between buffers.
-" TODO: Setup tmux-vim-navigator
-
-" Toggle the NERDTree with [Ctrl] + [n].
+" Toggle the NERDTree with 'Ctrl' + 'n'.
 nnoremap <C-n> :NERDTreeToggle<CR>
 
-" Stop highlighting of search results with [no].
+" Stop highlighting of search results with 'no'.
 nnoremap no :nohlsearch<CR>
 
-" TODO: What does 'set ruler' do?
-set ruler
+" Check spelling for English and German.
+set spelllang=en,de
 
-" TODO: Configure spell checking.
-" TODO: Add command 'NoTRW' to remove trailing whitespace.
+" Move to miss-spelled words with 'zn' / 'zN'.
+nnoremap zn ]s
+nnoremap zN [s
+
+" Remove trailing whitespace with ':NoTWS'.
+:command NoTWS :%s/\s\+$/
+
 " TODO: Checkout the CtrlP plugin.
 
