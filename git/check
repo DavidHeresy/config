@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# Use bash strict mode.
+set -Eeuo pipefail
+
+# First argument defines the '$LABEL' to check.
+# Examples: TODO FIXME BUG NOTE XXX HACK FEATURE IDEA WISH
+LABEL="$1"
+
+# Get the ROOT path of the repository.
+ROOT=$(git root)
+
+# Save and redirect 'stdout' to '$OUTFILE'
+exec 3>&1 1>"$ROOT/$LABEL.md"
+
+# Define the regex source and replace patterns.
+# IDEA: Add support for `--ignore-issue` comments for lines to ignore.
+SOURCE_PATTERN='HEAD:\([^:]*\):\([0-9]*\):.*'"$LABEL"': \(.*\)'
+TARGET_PATTERN='- **[#L\2](\1#L\2):** \3'
+
+# Write the '$HEADING'.
+echo "## $LABEL's"
+echo ""
+
+# Loop over all files tracked in the repository that are not ignored.
+for file in $(git ls-files)
+do
+    # Extract all lines of the file at HEAD, that have one of the defined issue labels.
+    git grep -n -E '('"$LABELS"'): ' "HEAD" -- "$ROOT/$file" \
+        > "$ROOT/$LABEL.tmp" \
+        || true
+
+    # Continue with the next file, if no lines where extracted.
+    [ ! -s "$ROOT/$LABEL.tmp" ] \
+        && continue
+    
+    # Write the subheading for the current file.
+    echo "### [$file]($file)"
+    echo ""
+
+    # Transform and write the raw lines in Markdown.
+    cat "$ROOT/$LABEL.tmp" | sed 's/'"$SOURCE_PATTERN"'/'"$TARGET_PATTERN"'/'
+    
+    # Write a newline as a spacer for the next section.
+    echo ""
+done
+
+# Clean-up the tmp files.
+rm -f "$ROOT/$LABEL.tmp"
+
+# Restore 'stdout'.
+exec 1>&3
+
+# Commit 'TODO.md' file.
+git add "$ROOT/$LABEL.md"
+git commit -m "$LABEL.md"
+
