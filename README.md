@@ -29,11 +29,7 @@ The `config` alias works like the normal `git` command:
 
 ### [.config/nvim/init.vim](.config/nvim/init.vim)
 
-- [ ] **[TODO](.config/nvim/init.vim#L47):** Setup tmux-vim-navigator
-- [ ] **[TODO](.config/nvim/init.vim#L55):** What does 'set ruler' do?
-- [ ] **[TODO](.config/nvim/init.vim#L58):** Configure spell checking.
-- [ ] **[TODO](.config/nvim/init.vim#L59):** Add command 'NoTRW' to remove trailing whitespace.
-- [ ] **[TODO](.config/nvim/init.vim#L60):** Checkout the CtrlP plugin.
+- [ ] **[TODO](.config/nvim/init.vim#L63):** Checkout the CtrlP plugin.
 
 ### [.gitconfig](.gitconfig)
 
