@@ -1,3 +1,4 @@
+.NERDTreeBookmarks
 .cache/
 .config/BraveSoftware/
 .config/DeltaChat/
@@ -29,8 +30,6 @@
 .config/teamviewer/
 .config/user-dirs.dirs
 .config/user-dirs.locale
-.dropbox-dist/
-.dropbox/
 .duc.db
 .gnupg/
 .histfile
@@ -44,13 +43,8 @@
 .ssh/
 .sudo_as_admin_successful
 .themes/
+.thunderbird/
 .var/
 .zcompdump
 .zsh_history
-projects/
-room/
-secret.env
-
-.NERDTreeBookmarks
-.thunderbird
 private/
