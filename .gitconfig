@@ -2,10 +2,10 @@
 	name = David Härer
 	email = david@familie-haerer.de
 [alias]
-	build = "! $SCRIPTS/build"
-    check = "! $SCRIPTS/check"
+	build = "! $GIT/build"
+    check = "! $GIT/check"
 	ignore = "!f() { echo "${1}" >> $(git root)/.gitignore; }; f"
-    readme = "! $SCRIPTS/readme"
+    readme = "! $GIT/readme"
 	remove = "!f() { git rm ${1} && git commit -m \"rm '${1}'\"; }; f"
 	rename = "!f() { git mv ${1} ${2} && git commit -m \"${1} -> ${2}\"; }; f"
 	root = "rev-parse --show-toplevel"
