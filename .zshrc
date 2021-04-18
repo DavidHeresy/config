@@ -8,8 +8,9 @@ set +a
 [[ -z "$BROWSER" ]] && echo "Missing 'BROWSER' in 'setting.env' file!"
 [[ -z "$GITHUB" ]]  && echo "Missing 'GITHUB' in 'setting.env' file!"
 
-# Export path to scripts directory.
+# Export path to (git) scripts directory.
 export SCRIPTS="$HOME/scripts"
+export GIT="$HOME/git"
 
 # Source private profile.
 source "$HOME/private/profile"
