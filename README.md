@@ -1,26 +1,15 @@
 # Home
 
-<!-- vim-markdown-toc GitLab -->
-
-* [Setup](#setup)
-* [Usage](#usage)
-* [Gnome Theme](#gnome-theme)
-* [NeoVim Plugins](#neovim-plugins)
-* [Todo](#todo)
-
-<!-- vim-markdown-toc -->
+This is my `$HOME` directory.
 
 ## Setup
 
 1. In `$HOME`, create a bare `config.git` repository:  
    `git init --bare config.git`
-
 2. In `$HOME/.zshrc` (or `.bashrc`), set the `config` alias:
    `alias config="git --git-dir=$HOME/config.git --work-tree=$HOME"`
-
 3. Source the `.zshrc` to activate the new alias and hide undtracked files in the status info:
    `config config status.showUntrackedFiles no`
-
 4. Add the `origin` remote to the repositrory:
    `config remote add origin <remote-uri>`
 
@@ -36,30 +25,35 @@ The `config` alias works like the normal `git` command:
 
 [git-update]: TODO: Add link to `git update` alias.
 
-## Gnome Theme
+## Issues
 
-TODO: Add link to "Nordic-darker" theme.
+### [.config/nvim/init.vim](.config/nvim/init.vim)
 
-## NeoVim Plugins
+- [ ] [`#L47`](.config/nvim/init.vim#L47) **`TODO`** Setup tmux-vim-navigator
+- [ ] [`#L55`](.config/nvim/init.vim#L55) **`TODO`** What does 'set ruler' do?
+- [ ] [`#L58`](.config/nvim/init.vim#L58) **`TODO`** Configure spell checking.
+- [ ] [`#L59`](.config/nvim/init.vim#L59) **`TODO`** Add command 'NoTRW' to remove trailing whitespace.
+- [ ] [`#L60`](.config/nvim/init.vim#L60) **`TODO`** Checkout the CtrlP plugin.
 
-- camelcasemotion
-- nerdtree
-- rainbow
-- syntastic
-- vim-airline
-- vim-airline-themes
-- vim-colors-solarized
-- vim-commentary
-- vim-fugitive
-- vim-markdown-toc
-- vim-repeat
-- vim-surround
-- vim-tmux-navigator
-- vim-toml
-- youcompleteme
+### [.config/shell/aliasrc](.config/shell/aliasrc)
 
-## Todo
+- [ ] [`#L29`](.config/shell/aliasrc#L29) **`IDEA`** source scripts/update
 
-- [ ] `.config/starship.toml`
-- [ ] `.config/nvim/init.vim`
+### [README.md](README.md)
+
+- [ ] [`#L37`](README.md#L37) **`TODO`** Add link to `git update` alias.
+- [ ] [`#L41`](README.md#L41) **`TODO`** Add link to "Nordic-darker" theme.
+
+### [SETUP.md](SETUP.md)
+
+- [ ] [`#L37`](SETUP.md#L37) **`TODO`** Add link to `git update` alias.
+- [ ] [`#L41`](SETUP.md#L41) **`TODO`** Add link to "Nordic-darker" theme.
+
+### [crontab](crontab)
+
+- [ ] [`#L17`](crontab#L17) **`IDEA`** Use backup important data, that is not tracked with Git.
+
+### [scripts/issues](scripts/issues)
+
+- [ ] [`#L18`](scripts/issues#L18) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
 
