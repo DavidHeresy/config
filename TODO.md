@@ -16,3 +16,15 @@
 
 - **[IDEA](git/todo#L24):** Add support for `--ignore-issue` comments for lines to ignore.
 
+Auf Branch main
+Ihr Branch ist 1 Commit vor 'origin/main'.
+  (benutzen Sie "git push", um lokale Commits zu publizieren)
+
+Änderungen, die nicht zum Commit vorgemerkt sind:
+  (benutzen Sie "git add <Datei>...", um die Änderungen zum Commit vorzumerken)
+  (benutzen Sie "git restore <Datei>...", um die Änderungen im Arbeitsverzeichnis zu verwerfen)
+	geändert:       README.md
+	geändert:       git/build
+	geändert:       git/todo
+
+keine Änderungen zum Commit vorgemerkt (benutzen Sie "git add" und/oder "git commit -a")
