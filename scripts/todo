@@ -10,8 +10,8 @@ TMP_FILES=".reportfiles.tmp"
 
 # Check or define config variables.
 [[ ! -v "LABELS" ]]      && LABELS='TODO|FIXME|BUG|NOTE|XXX|HACK|FEATURE|IDEA|WISH'
-[[ ! -v "OUTFILE" ]]     && OUTFILE="REPORT.md"
-[[ ! -v "HEADING" ]]     && HEADING="## Status"
+[[ ! -v "OUTFILE" ]]     && OUTFILE="TODO.md"
+[[ ! -v "HEADING" ]]     && HEADING="## ToDo's"
 [[ ! -v "SUB_HEADING" ]] && SUB_HEADING="###"
 
 # Get the ROOT path of the repository.
