@@ -10,7 +10,7 @@ FILENAME="$LABEL.md"
 FILE="$ROOT/$FILENAME"
 TMPFILE="$ROOT/$FILENAME.tmp"
 SOURCE_PATTERN='HEAD:\([^:]*\):\([0-9]*\):.*'"$LABEL"': \(.*\)'
-TARGET_PATTERN='- **[#L\2](\1#L\2):** \3'
+TARGET_PATTERN='- [#L\2](\1#L\2): \3'
 
 # Save and redirect 'stdout'.
 exec 3>&1 1>"$FILE"
