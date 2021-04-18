@@ -28,10 +28,6 @@ The `home` alias works like the normal `git` command:
 
 - **[TODO](.config/nvim/init.vim#L63):** Checkout the CtrlP plugin.
 
-### [.gitconfig](.gitconfig)
-
-- **[TODO](.gitconfig#L4):** Extract alias functions into scripts.
-
 ### [git/README.md](git/README.md)
 
 - **[TODO](git/README.md#L1):** Move scripts that are used git aliases from scripts to this directory.
