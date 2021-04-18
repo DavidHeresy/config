@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# Get the repository root path.
+ROOT="$(git root)"
+
+# Remove old 'README.md' file.
+rm -rf $ROOT/README.md
+
+# Create new 'README.md' file.
+touch $ROOT/README.md
+
+# Redirect 'stdout' to 'README.md' file.
+exec 1>"$ROOT/README.md"
+
+# Write 'DESCRIPTION' if exists.
+[ -f $ROOT/PROJECT.md ] \
+    && cat $ROOT/PROJECT.md
+
+# Write 'SETUP.md' if exists.
+[ -f $ROOT/SETUP.md ] \
+    && cat $ROOT/SETUP.md
+
+# Write 'USAGE.md' if exists.
+[ -f $ROOT/USAGE.md ] \
+    && cat $ROOT/USAGE.md
+
+# Write 'ARCHITECTURE.md' if exists.
+[ -f $ROOT/ARCHITECTURE.md ] \
+    && cat $ROOT/ARCHITECTURE.md
+
+# Write 'REPORT.md' if exists.
+[ -f $ROOT/TODO.md ] \
+    && cat $ROOT/TODO.md
+
+# Make 'README.md' file read-only.
+chmod -w $ROOT/README.md
+
