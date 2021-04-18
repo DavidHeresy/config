@@ -1,7 +1,6 @@
 [user]
 	name = David Härer
     email = david@familie-haerer.de
-; TODO: Extract alias functions into scripts.
 [alias]
 	build  = "! $GIT/build"
     todo   = "! $GIT/todo"
