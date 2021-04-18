@@ -4,7 +4,7 @@
 set -Eeuo pipefail
 
 # Define temporary help-files. 
-TMP_ISSUES=".report.tmp"
+TMP_TODO=".report.tmp"
 TMP_IGNORE=".reportignore.tmp"
 TMP_FILES=".reportfiles.tmp"
 
@@ -52,11 +52,11 @@ for file in $(cat "$ROOT/$TMP_FILES")
 do
     # Extract all lines of the file at HEAD, that have one of the defined issue labels.
     git grep -n -E '('"$LABELS"'): ' "HEAD" -- "$ROOT/$file" \
-        > "$ROOT/$TMP_ISSUES" \
+        > "$ROOT/$TMP_TODO" \
         || true
 
     # Continue with the next file, if no lines where extracted.
-    if [[ ! -s "$ROOT/$TMP_ISSUES" ]]
+    if [[ ! -s "$ROOT/$TMP_TODO" ]]
     then
         continue
     fi
@@ -66,12 +66,14 @@ do
     echo ""
 
     # Transform and write the raw lines in Markdown.
-    cat "$ROOT/$TMP_ISSUES" | sed 's/'"$SOURCE_PATTERN"'/'"$REPLACE_PATTERN"'/'
+    cat "$ROOT/$TMP_TODO" | sed 's/'"$SOURCE_PATTERN"'/'"$REPLACE_PATTERN"'/'
     
     # Write a newline as a spacer for the next section.
     echo ""
 done
 
 # Clean-up the tmp files.
-rm -f "$ROOT/$TMP_ISSUES" "$ROOT/$TMP_IGNORE" "$ROOT/$TMP_FILES"
+rm -f "$ROOT/$TMP_TODO" "$ROOT/$TMP_IGNORE" "$ROOT/$TMP_FILES"
+
+git update "$ROOT/TODO.md"
 
