@@ -1,30 +1,51 @@
 #!/bin/sh
 
-# Manage $HOME files with a bare Git repository.
-alias home="git --git-dir=$HOME/.home.git --work-tree=$HOME"
+# shell
+alias e="exit"
+alias c="clear && l"
+alias o="xdg-open"
+alias v="nvim"
+alias t="touch"
+alias md="mkdir"
+alias cm="chmod"
 
-# Show hidden files.
+# ls: Show hidden files by default.
 alias ls="ls -a"
+
+# cd: Navigate quickly.
+alias d="cd"
+alias ..="cd .."
+alias ...="cd ../.."
+
+# scripts
+alias a="append"
+alias u="source update"
+
+# exa: Use as default list tool.
 alias l="exa"
 alias la="exa -a"
 alias ll="exa -l"
 alias lla="exa -la"
 
-# Use UTF-8 in tmux.
+# tmux: Use UTF-8 in tmux.
 alias tmux="tmux -u"
 
-# Use lots of shortcuts.
-alias e="exit"
-alias c="clear && l"
-alias d="cd"
-alias ..="cd .."
-alias ...="cd ../.."
+# git: Use lots of shortcuts.
+alias g="git"
+alias ga="git add"
+alias gc="git commit"
+alias gu="git update"
+alias gi="git issues"
+alias grm="git remove"
+alias gmv="git rename"
+
+# home: Manage $HOME files with a bare Git repository.
+alias home="git --git-dir=$HOME/.home.git --work-tree=$HOME"
 alias h="home"
-alias a="append"
-alias o="xdg-open"
-alias v="$EDITOR"
-alias t="touch"
-alias md="mkdir"
-alias cm="chmod"
-alias u="source .zshrc" # IDEA: source scripts/update
+alias ha="home add"
+alias hc="home commit"
+alias hu="home update"
+alias hi="home issues"
+alias hrm="home remove"
+alias hmv="home rename"
 
