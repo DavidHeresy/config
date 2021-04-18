@@ -51,7 +51,3 @@ The `config` alias works like the normal `git` command:
 
 - **[IDEA](git/todo#L24):** Add support for `--ignore-issue` comments for lines to ignore.
 
-### [scripts/issues](scripts/issues)
-
-- **[IDEA](scripts/issues#L24):** Add support for `--ignore-issue` comments for lines to ignore.
-
