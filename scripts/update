@@ -1,11 +1,17 @@
 #!/bin/sh
 
+# Update installed packages.
+sudo apt update && sudo apt upgrade
+
+# Make scripts executable.
+for script in $SCRIPTS
+do
+    chmod +x "$script"
+done
+
 # Update the shell environment.
 source .zshrc
 
-# Update 'ISSUES.md' file.
-home report
-
-# Update 'README.md' file.
-home readme
+# Build home repository.
+home build
 
