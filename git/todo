@@ -75,5 +75,6 @@ done
 # Clean-up the tmp files.
 rm -f "$ROOT/$TMP_TODO" "$ROOT/$TMP_IGNORE" "$ROOT/$TMP_FILES"
 
-git update "$ROOT/TODO.md"
+git add "$ROOT/TODO.md"
+git commit -m "TODO.md"
 
