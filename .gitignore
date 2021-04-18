@@ -51,3 +51,6 @@ projects/
 room/
 secret.env
 
+.NERDTreeBookmarks
+.thunderbird
+private/
