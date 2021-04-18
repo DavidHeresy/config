@@ -3,8 +3,9 @@
 # Update the shell environment.
 source .zshrc
 
-# Update the README.md file.
-echo "" > 
-rm $HOME/README.md && touch
-exec 3>&1 1>"$HOME/README.md"
-echo "Home"
+# Update 'ISSUES.md' file.
+home issues
+
+# Update 'README.md' file.
+home readme
+
