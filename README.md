@@ -22,8 +22,6 @@ The `home` alias works like the normal `git` command:
 - `home pull`: Pull changes from remote `origin`.
 - `home push`: Push changes to remote `origin`.
 
-## TODO's
-
 ## IDEA's
 
 ### [.config/nvim/init.vim](.config/nvim/init.vim)
