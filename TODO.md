@@ -24,7 +24,3 @@
 
 - **[IDEA](git/todo#L24):** Add support for `--ignore-issue` comments for lines to ignore.
 
-### [scripts/issues](scripts/issues)
-
-- **[IDEA](scripts/issues#L24):** Add support for `--ignore-issue` comments for lines to ignore.
-
