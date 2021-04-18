@@ -12,6 +12,3 @@ done
 # Update the shell environment.
 source .zshrc
 
-# Build home repository.
-home build
-
