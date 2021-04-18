@@ -4,7 +4,7 @@
 source .zshrc
 
 # Update 'ISSUES.md' file.
-home issues
+home report
 
 # Update 'README.md' file.
 home readme
