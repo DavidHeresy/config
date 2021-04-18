@@ -35,25 +35,11 @@ The `config` alias works like the normal `git` command:
 - [ ] [`#L59`](.config/nvim/init.vim#L59) **`TODO`** Add command 'NoTRW' to remove trailing whitespace.
 - [ ] [`#L60`](.config/nvim/init.vim#L60) **`TODO`** Checkout the CtrlP plugin.
 
-### [.config/shell/aliasrc](.config/shell/aliasrc)
-
-- [ ] [`#L29`](.config/shell/aliasrc#L29) **`IDEA`** source scripts/update
-
 ### [README.md](README.md)
 
-- [ ] [`#L37`](README.md#L37) **`TODO`** Add link to `git update` alias.
-- [ ] [`#L41`](README.md#L41) **`TODO`** Add link to "Nordic-darker" theme.
-
-### [SETUP.md](SETUP.md)
-
-- [ ] [`#L37`](SETUP.md#L37) **`TODO`** Add link to `git update` alias.
-- [ ] [`#L41`](SETUP.md#L41) **`TODO`** Add link to "Nordic-darker" theme.
-
-### [crontab](crontab)
-
-- [ ] [`#L17`](crontab#L17) **`IDEA`** Use backup important data, that is not tracked with Git.
+- [ ] [`#L26`](README.md#L26) **`TODO`** Add link to `git update` alias.
 
 ### [scripts/issues](scripts/issues)
 
-- [ ] [`#L18`](scripts/issues#L18) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
+- [ ] [`#L24`](scripts/issues#L24) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
 
