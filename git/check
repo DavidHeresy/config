@@ -48,6 +48,11 @@ done
 # Clean-up the tmp files.
 rm -f "$ROOT/$LABEL.tmp"
 
+# Exit with error, if no lines were found.
+[ $(wc -l "$ROOT/$LABEL.md") = "2 $LABEL.md" ] \
+    && rm "$ROOT/$LABEL.md" \
+    && exit 1
+
 # Restore 'stdout'.
 exec 1>&3
 
