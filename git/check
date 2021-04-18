@@ -26,7 +26,7 @@ echo ""
 for file in $(git ls-files)
 do
     # Extract all lines of the file at HEAD, that have one of the defined issue labels.
-    git grep -n -E '('"$LABELS"'): ' "HEAD" -- "$ROOT/$file" \
+    git grep -n -E '('"$LABEL"'): ' "HEAD" -- "$ROOT/$file" \
         > "$ROOT/$LABEL.tmp" \
         || true
 
