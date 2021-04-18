@@ -45,9 +45,9 @@ rm -f "$TMPFILE"
 
 # Exit with error, if no lines were found.
 [ "$(wc -l "$FILE")" = "2 $FILE" ] \
-    && rm "$FILE" \
-    && git rm "$FILE" 2>/dev/null \
-    && git commit -m "rm '$FILENAME'" 2>/dev/null \
+    && rm -f "$FILE" \
+    && git rm "$FILE" \
+    && git commit -m "rm '$FILENAME'" \
     && exit 1
 
 # Commit '$FILE'.
