@@ -2,33 +2,33 @@
 
 ### [.config/nvim/init.vim](.config/nvim/init.vim)
 
-- [ ] [`#L47`](.config/nvim/init.vim#L47) **`TODO`** Setup tmux-vim-navigator
-- [ ] [`#L55`](.config/nvim/init.vim#L55) **`TODO`** What does 'set ruler' do?
-- [ ] [`#L58`](.config/nvim/init.vim#L58) **`TODO`** Configure spell checking.
-- [ ] [`#L59`](.config/nvim/init.vim#L59) **`TODO`** Add command 'NoTRW' to remove trailing whitespace.
-- [ ] [`#L60`](.config/nvim/init.vim#L60) **`TODO`** Checkout the CtrlP plugin.
+- [ ] [**TODO**](.config/nvim/init.vim#L47): Setup tmux-vim-navigator
+- [ ] [**TODO**](.config/nvim/init.vim#L55): What does 'set ruler' do?
+- [ ] [**TODO**](.config/nvim/init.vim#L58): Configure spell checking.
+- [ ] [**TODO**](.config/nvim/init.vim#L59): Add command 'NoTRW' to remove trailing whitespace.
+- [ ] [**TODO**](.config/nvim/init.vim#L60): Checkout the CtrlP plugin.
 
 ### [.gitconfig](.gitconfig)
 
-- [ ] [`#L4`](.gitconfig#L4) **`TODO`** Extract alias functions into scripts.
+- [ ] [**TODO**](.gitconfig#L4): Extract alias functions into scripts.
 
 ### [README.md](README.md)
 
-- [ ] [`#L26`](README.md#L26) **`TODO`** Add link to `git update` alias.
+- [ ] [**TODO**](README.md#L26): Add link to `git update` alias.
 
 ### [USAGE.md](USAGE.md)
 
-- [ ] [`#L11`](USAGE.md#L11) **`TODO`** Add link to `git update` alias.
+- [ ] [**TODO**](USAGE.md#L11): Add link to `git update` alias.
 
 ### [git/README.md](git/README.md)
 
-- [ ] [`#L1`](git/README.md#L1) **`TODO`** Move scripts that are used git aliases from scripts to this directory.
+- [ ] [**TODO**](git/README.md#L1): Move scripts that are used git aliases from scripts to this directory.
 
 ### [git/todo](git/todo)
 
-- [ ] [`#L24`](git/todo#L24) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
+- [ ] [**IDEA**](git/todo#L24): Add support for `--ignore-issue` comments for lines to ignore.
 
 ### [scripts/issues](scripts/issues)
 
-- [ ] [`#L24`](scripts/issues#L24) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
+- [ ] [**IDEA**](scripts/issues#L24): Add support for `--ignore-issue` comments for lines to ignore.
 
