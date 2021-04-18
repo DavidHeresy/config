@@ -1,6 +1,6 @@
 # Home
 
-*This is my `/home/david` directory.*
+*This is my `/home/david`.*
 
 ## Setup
 
