@@ -12,7 +12,15 @@
 
 - [ ] [`#L26`](README.md#L26) **`TODO`** Add link to `git update` alias.
 
+### [USAGE.md](USAGE.md)
+
+- [ ] [`#L11`](USAGE.md#L11) **`TODO`** Add link to `git update` alias.
+
 ### [scripts/issues](scripts/issues)
 
 - [ ] [`#L24`](scripts/issues#L24) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
+
+### [scripts/report](scripts/report)
+
+- [ ] [`#L24`](scripts/report#L24) **`IDEA`** Add support for `--ignore-issue` comments for lines to ignore.
 
