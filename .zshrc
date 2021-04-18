@@ -1,6 +1,6 @@
 # Load and export setting variables.
 set -a
-. $HOME/setting.env
+. $HOME/.config/shell/setting.env
 set +a
 
 # Check setting variables.
