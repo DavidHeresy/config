@@ -6,6 +6,7 @@
 	ignore = "!f() { echo "${1}" >> $(git root)/.gitignore; }; f"
 	update = "!f() { git add ${1} && git commit -m ${1}; }; f"
 	rename = "!f() { git mv ${1} ${2} && git commit -m \"${1} -> ${2}\"; }; f"
+	remove = "!f() { git rm ${1} && git commit -m \"rm '${1}'\"; }; f"
     issues = "! ~/scripts/issues"
     readme = "! ~/scripts/readme"
 
