@@ -48,3 +48,4 @@
 .zcompdump
 .zsh_history
 private/
+.gitconfig/
