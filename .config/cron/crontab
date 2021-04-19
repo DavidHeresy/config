@@ -1,0 +1,18 @@
+# Help: crontab.guru
+# * * * * *  command to be executed
+# | | | | |
+# | | | | +----- day of week (0 - 6) (Sunday=0)
+# | | | +------- month (1 - 12)
+# | | +--------- day of month (1 - 31)
+# | +----------- hour (0 - 23)
+# +------------- min (0 - 59)
+
+# Shutdown the computer during the night.
+30-59   22  * * 0-4 /sbin/shutdown -h now
+  *     23  * * 0-4 /sbin/shutdown -h now
+  *   00-05 * * 1-5 /sbin/shutdown -h now
+  *   01-05 * *  6  /sbin/shutdown -h now
+  *   01-05 * *  0  /sbin/shutdown -h now
+
+# IDEA: Use backup important data, that is not tracked with Git.
+
