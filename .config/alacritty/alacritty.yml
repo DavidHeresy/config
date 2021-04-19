@@ -3,6 +3,9 @@ background_opacity: 1
 mouse_bindings:
     - { mouse: Middle, action: PasteSelection }
 
+shell:
+    program: /usr/bin/zsh
+
 url:
     launcher: $BROWSER
 
