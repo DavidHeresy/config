@@ -13,7 +13,7 @@ export SCRIPTS="$HOME/scripts"
 export GIT="$HOME/git"
 
 # Source private profile.
-source "$HOME/private/profile"
+source "$HOME/Privat/profile"
 
 # Load and export aliases.
 source $HOME/.config/shell/aliasrc
