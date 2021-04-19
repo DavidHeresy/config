@@ -1,6 +1,10 @@
 " Use the Pathogen plugin manager.
 execute pathogen#infect()
 
+" Set leader and localleader.
+:let mapleader = ","
+:let maplocalleader = ";"
+
 " Configure the user interface.
 filetype plugin indent on
 set number
@@ -15,6 +19,7 @@ set textwidth=99
 
 " Show matching parenthesis.
 set showmatch
+let g:rainbow_active = 1
 
 " Search while typing and highlight results.
 set incsearch
@@ -60,5 +65,16 @@ nnoremap zN [s
 " Remove trailing whitespace with ':NoTWS'.
 :command NoTWS :%s/\s\+$/
 
+" Only allow certain plugins.
+:let g:airline_extensions = []
+
 " IDEA: Checkout the CtrlP plugin.
 
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+map <silent> ge <Plug>CamelCaseMotion_ge
+sunmap w
+sunmap b
+sunmap e
+sunmap ge
