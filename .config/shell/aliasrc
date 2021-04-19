@@ -5,7 +5,6 @@ alias e="exit"
 alias c="clear && l"
 alias o="xdg-open"
 alias v="nvim"
-alias t="touch"
 alias md="mkdir"
 alias cm="chmod"
 alias sw="source workspace"
@@ -61,4 +60,9 @@ alias ht="home todo"
 alias hu="home update"
 alias hrm="home remove"
 alias hmv="home rename"
+
+# todo.txt
+alias t="todo-txt -d $HOME/.config/todo-txt/todo.cfg"
+alias ta="append $TODO_FILE"
+alias to="$EDITOR $TODO_FILE"
 
