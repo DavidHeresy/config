@@ -11,6 +11,7 @@
 .config/enchant/
 .config/evolution/
 .config/gedit/
+.config/gnome-control-center/
 .config/gnome-initial-setup-done
 .config/gtk-2.0/
 .config/gtk-3.0/
@@ -31,6 +32,7 @@
 .config/user-dirs.dirs
 .config/user-dirs.locale
 .duc.db
+.gitconfig
 .gnupg/
 .histfile
 .home.git/
@@ -48,4 +50,3 @@
 .zcompdump
 .zsh_history
 Privat/
-.gitconfig
