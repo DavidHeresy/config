@@ -15,6 +15,13 @@ export GIT="$HOME/git"
 # Source private profile.
 source "$HOME/Privat/profile"
 
+# Source todo.txt config file.
+source $HOME/.config/todo-txt/todo.cfg
+[[ -z "$TODO_DIR" ]]  && echo "Missing 'TODO_DIR' in 'todo.cfg' file!"
+[[ -z "$TODO_FILE" ]]  && echo "Missing 'TODO_FILE' in 'todo.cfg' file!"
+[[ -z "$DONE_FILE" ]]  && echo "Missing 'DONE_FILE' in 'todo.cfg' file!"
+[[ -z "$REPORT_FILE" ]]  && echo "Missing 'REPORT_FILE' in 'todo.cfg' file!"
+
 # Load and export aliases.
 source $HOME/.config/shell/aliasrc
 
@@ -27,6 +34,9 @@ function chpwd() {
 
 # Add $HOME/scripts to '$PATH'.
 export PATH="$HOME/scripts:$PATH"
+
+# Set root crontab file.
+sudo crontab -u root $HOME/.config/cron/crontab
 
 # Use the 'starship' prompt.
 eval "$(starship init zsh)"
