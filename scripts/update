@@ -10,5 +10,5 @@ do
 done
 
 # Update the shell environment.
-source .zshrc
+source $HOME/.zshrc
 
