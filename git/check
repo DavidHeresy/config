@@ -7,8 +7,8 @@
 LABEL="$1"
 ROOT=$(git root)
 FILENAME="$LABEL.md"
-FILE="$ROOT/$FILENAME"
-TMPFILE="$ROOT/$FILENAME.tmp"
+FILE="$ROOT/meta/$FILENAME"
+TMPFILE="$ROOT/meta/$FILENAME.tmp"
 SOURCE_PATTERN='HEAD:\([^:]*\):\([0-9]*\):.*'"$LABEL"': \(.*\)'
 TARGET_PATTERN='- [`#L\2`](\1#L\2) \3'
 
