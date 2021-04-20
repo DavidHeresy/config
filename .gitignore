@@ -47,5 +47,5 @@
 .var/
 .zcompdump
 .zsh_history
-private/
+Privat/
 .gitconfig
