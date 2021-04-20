@@ -8,6 +8,7 @@ alias v="nvim"
 alias t="touch"
 alias md="mkdir"
 alias cm="chmod"
+alias sw="source workspace"
 
 # ls: Show hidden files by default.
 alias ls="ls -a"
