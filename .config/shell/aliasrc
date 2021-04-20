@@ -17,6 +17,13 @@ alias d="cd"
 alias ..="cd .."
 alias ...="cd ../.."
 
+# xclip
+alias copy="xclip"
+alias paste="xclip -o"
+
+# bat
+alias bat="batcat"
+
 # scripts
 alias a="append"
 alias u="source update"
@@ -63,6 +70,10 @@ alias hmv="home rename"
 
 # todo.txt
 alias t="todo-txt -d $HOME/.config/todo-txt/todo.cfg"
-alias ta="append $TODO_FILE"
-alias to="$EDITOR $TODO_FILE"
+alias at="append $TODO_FILE"
+alias ot="$EDITOR $TODO_FILE"
+
+# notes
+alias an="append $NOTES/$(date +%Y-%m-%d) $(date +%H:%M)"
+alias on="$EDITOR "$NOTES""
 
