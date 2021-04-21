@@ -1,4 +1,4 @@
 # Home
 
-*My `/home/david`.*
+*This is my `/home/david` directory.*
 
