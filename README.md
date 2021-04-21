@@ -17,3 +17,11 @@
 
 ## IDEA's
 
+### [.config/nvim/init.vim](.config/nvim/init.vim)
+
+- [`#L71`](.config/nvim/init.vim#L71) Checkout the CtrlP plugin.
+
+### [Code/git/check](Code/git/check)
+
+- [`#L10`](Code/git/check#L10) Add support for `--ignore-<LABEL>` comments for lines to ignore.
+
