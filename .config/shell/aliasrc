@@ -49,6 +49,7 @@ alias gr="git report"
 alias gs="git status"
 alias gt="git todo"
 alias gu="git update"
+alias glf="git ls-files"
 alias grm="git remove"
 alias gmv="git rename"
 
@@ -65,15 +66,16 @@ alias hr="home report"
 alias hs="home status"
 alias ht="home todo"
 alias hu="home update"
+alias hlf="home ls-files"
 alias hrm="home remove"
 alias hmv="home rename"
 
 # todo.txt
 alias t="todo-txt -d $HOME/.config/todo-txt/todo.cfg"
-alias at="append $TODO_FILE"
-alias ot="$EDITOR $TODO_FILE"
+alias ta="append $TODO_FILE"
+alias to="$EDITOR $TODO_FILE"
 
 # notes
-alias an="append $NOTES/$(date +%Y-%m-%d) $(date +%H:%M)"
-alias on="$EDITOR "$NOTES""
+alias na="append $NOTES/$(date +%Y-%m-%d) $(date +%H:%M)"
+alias no="$EDITOR "$NOTES""
 
