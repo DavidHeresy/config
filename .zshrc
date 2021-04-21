@@ -9,8 +9,8 @@ set +a
 [[ -z "$GITHUB" ]]  && echo "Missing 'GITHUB' in 'setting.env' file!"
 
 # Export path to (git) scripts directory.
-export SCRIPTS="$HOME/scripts"
-export GIT="$HOME/git"
+export SCRIPTS="$HOME/Code/shell"
+export GIT="$HOME/Code/git"
 
 # Source private profile.
 source "$HOME/Privat/profile"
