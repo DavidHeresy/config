@@ -1,22 +1,18 @@
 #!/usr/bin/env bash
 # USAGE: git check "<LABEL>"
 # Examples for <LABEL>: TODO FIXME BUG NOTE XXX HACK FEATURE IDEA WISH
-# IDEA: Add support for `--ignore-<LABEL>` comments for lines to ignore.
 
 # Define global variables.
 LABEL="$1"
 ROOT=$(git root)
-FILENAME="$LABEL.md"
-FILE="$ROOT/meta/$FILENAME"
-TMPFILE="$ROOT/meta/$FILENAME.tmp"
+TMPFILE="$ROOT/meta/$LABEL.tmp"
 SOURCE_PATTERN='HEAD:\([^:]*\):\([0-9]*\):.*'"$LABEL"': \(.*\)'
+# IDEA: Add support for `--ignore-<LABEL>` comments for lines to ignore.
 TARGET_PATTERN='- [`#L\2`](\1#L\2) \3'
 
-# Save and redirect 'stdout'.
-exec 3>&1 1>"$FILE"
-
 # Write the heading.
-echo "## $LABEL's"; echo ""
+echo "## $LABEL's"
+echo ""
 
 # Loop over all files in the repository.
 for file in $(git ls-files)
@@ -37,19 +33,6 @@ do
     echo ""
 done
 
-# Restore 'stdout'.
-exec 1>&3
-
 # Clean-up the tmp files.
 rm -f "$TMPFILE"
-
-# Exit with error, if no lines were found.
-[ "$(wc -l "$FILE")" = "2 $FILE" ] \
-    && rm -f "$FILE" \
-    && git rm "$FILE" \
-    && git commit -m "rm '$FILENAME'" \
-    && exit 1
-
-# Commit '$FILE'.
-git add "$FILE" && git commit -m "$FILENAME"
 
