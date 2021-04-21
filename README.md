@@ -13,20 +13,17 @@
 4. Add the `origin` remote to the repositrory:
    `config remote add origin <remote-uri>`
 
-## Usage
-
-The `home` alias works like the normal `git` command:
-
-- `home ls-files`: Show files tracked in the repository.
-- `home status`: Show the repository status.
-- `home pull`: Pull changes from remote `origin`.
-- `home push`: Push changes to remote `origin`.
+## TODO's
 
 ## IDEA's
 
+### [.config/cron/crontab](.config/cron/crontab)
+
+- [`#L17`](.config/cron/crontab#L17) Use backup important data, that is not tracked with Git.
+
 ### [.config/nvim/init.vim](.config/nvim/init.vim)
 
-- [`#L63`](.config/nvim/init.vim#L63) Checkout the CtrlP plugin.
+- [`#L71`](.config/nvim/init.vim#L71) Checkout the CtrlP plugin.
 
 ### [git/check](git/check)
 
