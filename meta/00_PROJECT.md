@@ -1,4 +1,0 @@
-# Home
-
-*My `/home/david`.*
-
