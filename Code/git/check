@@ -5,7 +5,7 @@
 # Define global variables.
 LABEL="$1"
 ROOT=$(git root)
-TMPFILE="$ROOT/meta/$LABEL.tmp"
+TMPFILE="$ROOT/.meta/$LABEL.tmp"
 SOURCE_PATTERN='HEAD:\([^:]*\):\([0-9]*\):.*'"$LABEL"': \(.*\)'
 # IDEA: Add support for `--ignore-<LABEL>` comments for lines to ignore.
 TARGET_PATTERN='- [`#L\2`](\1#L\2) \3'
@@ -34,5 +34,5 @@ do
 done
 
 # Clean-up the tmp files.
-rm -f "$TMPFILE"
+rm -f "$TMPFILE" > /dev/null 2>&1
 
