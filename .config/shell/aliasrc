@@ -71,7 +71,7 @@ alias hrm="home remove"
 alias hmv="home rename"
 
 # todo.txt
-alias t="todo-txt -d $HOME/.config/todo-txt/todo.cfg"
+alias t="bash $APPS/todo-txt/todo.sh"
 alias ta="append $TODO_FILE"
 alias to="$EDITOR $TODO_FILE"
 
