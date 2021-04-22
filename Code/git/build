@@ -2,6 +2,7 @@
 
 # Get the repository root path.
 ROOT="$(git root)"
+LABELS="$@"
 
 rm -f "$ROOT/README.md"
 
@@ -9,11 +10,13 @@ rm -f "$ROOT/README.md"
 exec 3>&1 1>"$ROOT/README.md"
 
 # Concatenate all MarkDown files that start with '0'.
-cat $ROOT/.meta/0*.md
+cat $ROOT/.readme/0*.md
 
 # Run repository checks.
-git check "TODO"
-git check "IDEA"
+for label in $LABELS
+do
+    git check "$label"
+done
 
 # Restore 'stdout'.
 exec 1>&3
@@ -23,5 +26,5 @@ chmod -w "$ROOT/README.md"
 
 # Commit 'README.md' file.
 git add "$ROOT/README.md"
-git commit -m "README.md"
+git commit -m "Update README.md"
 
