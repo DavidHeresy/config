@@ -2,36 +2,21 @@
 # USAGE: git check "<LABEL>"
 # Examples for <LABEL>: TODO FIXME BUG NOTE XXX HACK FEATURE IDEA WISH
 
-# Define global variables.
 LABEL="$1"
 ROOT=$(git root)
 SOURCE_PATTERN='HEAD:\([^:]*\):\([0-9]*\):.*'"$LABEL"': \(.*\)'
-# IDEA: Add support for `--ignore-<LABEL>` comments for lines to ignore.
 TARGET_PATTERN='- [`#L\2`](\1#L\2) \3'
 
-# Write the heading.
 echo "## $LABEL's"
 echo ""
 
-# Loop over all files in the repository.
 for file in $(git ls-files)
 do
-    # Extract all lines of the file at HEAD, that have the defined '$LABEL'.
-    items=(git grep -n -E "$LABEL: " "HEAD" -- "$ROOT/$file")
-
-    # Continue with the next file, if no lines where extracted.
+    items=$(git grep -n -E "$LABEL: " "HEAD" -- "$ROOT/$file")
     [ -z "$items" ] && continue
-    
-    # Write the subheading for the current file.
     echo "### [$file]($file)"; echo ""
-
-    # Transform and write the raw lines in Markdown.
-    printf $items | sed 's/'"$SOURCE_PATTERN"'/'"$TARGET_PATTERN"'/'
-    
-    # Write a newline as a spacer for the next section.
+    printf "$items" | sed 's/'"$SOURCE_PATTERN"'/'"$TARGET_PATTERN"'/'
+    echo ""
     echo ""
 done
-
-# Clean-up the tmp files.
-rm -f "$TMPFILE" > /dev/null 2>&1
 
