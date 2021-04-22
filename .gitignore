@@ -29,6 +29,7 @@
 .config/sublime-merge/
 .config/sublime-text-3/
 .config/teamviewer/
+.config/totem/
 .config/user-dirs.dirs
 .config/user-dirs.locale
 .duc.db
@@ -52,4 +53,3 @@
 Arbeit/
 Privat/
 Code/apps/
-.config/totem/
