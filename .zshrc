@@ -3,16 +3,10 @@ set -a
 . $HOME/.config/shell/setting.env
 set +a
 
-# Export paths to various directory.
-export SCRIPTS="$HOME/Code/shell"
-export GIT="$HOME/Code/git"
-export PATH="$SCRIPTS:$PATH"
-
-# Source private profile.
+# Source various profiles.
 source "$HOME/Privat/profile"
-
-# Load and export aliases.
-source $HOME/.config/shell/aliasrc
+source "$HOME/.config/shell/aliasrc"
+source "$HOME/Code/apps/todo-txt/todo.cfg"
 
 # List files at every directory change.
 function chpwd() {
