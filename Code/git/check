@@ -5,7 +5,6 @@
 # Define global variables.
 LABEL="$1"
 ROOT=$(git root)
-TMPFILE="$ROOT/.meta/$LABEL.tmp"
 SOURCE_PATTERN='HEAD:\([^:]*\):\([0-9]*\):.*'"$LABEL"': \(.*\)'
 # IDEA: Add support for `--ignore-<LABEL>` comments for lines to ignore.
 TARGET_PATTERN='- [`#L\2`](\1#L\2) \3'
@@ -18,16 +17,16 @@ echo ""
 for file in $(git ls-files)
 do
     # Extract all lines of the file at HEAD, that have the defined '$LABEL'.
-    git grep -n -E "$LABEL: " "HEAD" -- "$ROOT/$file" > "$TMPFILE"
+    items=(git grep -n -E "$LABEL: " "HEAD" -- "$ROOT/$file")
 
     # Continue with the next file, if no lines where extracted.
-    [ ! -s "$TMPFILE" ] && continue
+    [ -z "$items" ] && continue
     
     # Write the subheading for the current file.
     echo "### [$file]($file)"; echo ""
 
     # Transform and write the raw lines in Markdown.
-    cat "$TMPFILE" | sed 's/'"$SOURCE_PATTERN"'/'"$TARGET_PATTERN"'/'
+    printf $items | sed 's/'"$SOURCE_PATTERN"'/'"$TARGET_PATTERN"'/'
     
     # Write a newline as a spacer for the next section.
     echo ""
