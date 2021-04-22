@@ -1,36 +1,86 @@
-# Home
-
-*This is my `/home/david` directory.*
-
-## Setup
-
-1. In `$HOME`, create a bare `config.git` repository:  
-   `git init --bare config.git`
-2. In `$HOME/.zshrc` (or `.bashrc`), set the `config` alias:
-   `alias config="git --git-dir=$HOME/config.git --work-tree=$HOME"`
-3. Source the `.zshrc` to activate the new alias and hide undtracked files in the status info:
-   `config config status.showUntrackedFiles no`
-4. Add the `origin` remote to the repositrory:
-   `config remote add origin <remote-uri>`
-
-## Usage
-
-The `home` alias works like the normal `git` command:
-
-- `home ls-files`: Show files tracked in the repository.
-- `home status`: Show the repository status.
-- `home pull`: Pull changes from remote `origin`.
-- `home push`: Push changes to remote `origin`.
-
-## TODO's
-
 ## IDEA's
 
+### [.config/alacritty/alacritty.yml](.config/alacritty/alacritty.yml)
+
+git
+### [.config/nvim/README.md](.config/nvim/README.md)
+
+git
 ### [.config/nvim/init.vim](.config/nvim/init.vim)
 
-- [`#L71`](.config/nvim/init.vim#L71) Checkout the CtrlP plugin.
+git
+### [.config/shell/aliasrc](.config/shell/aliasrc)
 
+git
+### [.config/shell/setting.env](.config/shell/setting.env)
+
+git
+### [.config/starship.toml](.config/starship.toml)
+
+git
+### [.gitignore](.gitignore)
+
+git
+### [.meta/00_PROJECT.md](.meta/00_PROJECT.md)
+
+git
+### [.meta/01_SETUP.md](.meta/01_SETUP.md)
+
+git
+### [.meta/02_USAGE.md](.meta/02_USAGE.md)
+
+git
+### [.tmux.conf](.tmux.conf)
+
+git
+### [.todo-txt/todo.cfg](.todo-txt/todo.cfg)
+
+git
+### [.zshrc](.zshrc)
+
+git
+### [Code/git/build](Code/git/build)
+
+git
 ### [Code/git/check](Code/git/check)
 
-- [`#L10`](Code/git/check#L10) Add support for `--ignore-<LABEL>` comments for lines to ignore.
+git
+### [Code/git/gitconfig.template](Code/git/gitconfig.template)
 
+git
+### [Code/git/ignore](Code/git/ignore)
+
+git
+### [Code/git/remove](Code/git/remove)
+
+git
+### [Code/git/rename](Code/git/rename)
+
+git
+### [Code/git/root](Code/git/root)
+
+git
+### [Code/git/update](Code/git/update)
+
+git
+### [Code/scripts/append](Code/scripts/append)
+
+git
+### [Code/scripts/git-config](Code/scripts/git-config)
+
+git
+### [Code/scripts/ip-addr](Code/scripts/ip-addr)
+
+git
+### [Code/scripts/pass-update](Code/scripts/pass-update)
+
+git
+### [Code/scripts/set-gnome-theme](Code/scripts/set-gnome-theme)
+
+git
+### [Code/scripts/update](Code/scripts/update)
+
+git
+### [README.md](README.md)
+
+git
