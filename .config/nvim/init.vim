@@ -13,6 +13,9 @@ set cursorline
 set ruler
 set lazyredraw
 
+" Highlight search results while typing.
+set is hls
+
 " Set default width.
 set colorcolumn=100
 set textwidth=99
@@ -64,6 +67,9 @@ nnoremap zN [s
 
 " Remove trailing whitespace with ':NoTWS'.
 :command NoTWS :%s/\s\+$/
+
+" Remove NeoVim swap files with ':NoSwap'.
+:command NoSwap :! rm -rf $HOME/.local/share/nvim/swap/*.swp
 
 " Only allow certain plugins.
 :let g:airline_extensions = []
