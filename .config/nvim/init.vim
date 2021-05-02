@@ -5,6 +5,9 @@ execute pathogen#infect()
 :let mapleader = ","
 :let maplocalleader = ";"
 
+" Copy into system clipboard.
+set clipboard=unnamedplus
+
 " Configure the user interface.
 filetype plugin indent on
 set number
@@ -12,6 +15,11 @@ set wildmenu
 set cursorline
 set ruler
 set lazyredraw
+
+" Insert whitespace in normal mode.
+nnoremap <Space> i<Space><Right><ESC>
+nnoremap <Tab> i<Tab><Right><ESC>
+nnoremap <CR> i<CR><Right><ESC>
 
 " Highlight search results while typing.
 set is hls
