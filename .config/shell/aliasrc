@@ -23,6 +23,7 @@ alias paste="xclip -o"
 
 # bat
 alias bat="batcat"
+alias b="batcat"
 
 # scripts
 alias a="append"
@@ -73,9 +74,18 @@ alias hmv="home rename"
 # todo.txt
 alias t="bash $APPS/todo-txt/todo.sh"
 alias ta="append $TODO_FILE"
-alias to="$EDITOR $TODO_FILE"
+alias to="nvim $TODO_FILE"
+alias idee="append $TODO_FILE +idee"
+alias frage="append $TODO_FILE +frage"
+alias wunsch="append $TODO_FILE +wunsch"
+alias notiz="append $TODO_FILE +notiz"
+alias aufgabe="append $TODO_FILE +aufgabe"
 
 # notes
 alias na="append $NOTES/$(date +%Y-%m-%d) $(date +%H:%M)"
-alias no="$EDITOR "$NOTES""
+alias no="nvim "$NOTES""
+
+# newsboat
+alias feed="newsboat -u $HOME/Privat/Lesezeichen/rss"
+alias fo="newsboat -u $HOME/Privat/Lesezeichen/rss"
 
