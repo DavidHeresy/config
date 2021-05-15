@@ -1,7 +1,7 @@
 # -- NEWSBOAT CONFIG --
 
 auto-reload no
-external-url-viewer "urlscan -dc -r 'linkhandler {}'"
+external-url-viewer "urlscan -dc -r 'brave-browser {}'"
 
 
 # -- KEYBINDINGS --
