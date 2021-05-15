@@ -6,7 +6,7 @@ set +a
 # Source various profiles.
 source "$HOME/Privat/profile"
 source "$HOME/.config/shell/aliasrc"
-source "$HOME/Code/apps/todo-txt/todo.cfg"
+source "$APPS/todo-txt/todo.cfg"
 
 # List files at every directory change.
 function chpwd() {
