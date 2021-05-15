@@ -8,6 +8,7 @@ alias v="nvim"
 alias md="mkdir"
 alias cm="chmod"
 alias sw="source workspace"
+alias bm="buku --suggest"
 
 # ls: Show hidden files by default.
 alias ls="ls -a"
@@ -88,4 +89,7 @@ alias no="nvim "$NOTES""
 # newsboat
 alias feed="newsboat -u $HOME/Privat/Lesezeichen/rss"
 alias fo="newsboat -u $HOME/Privat/Lesezeichen/rss"
+
+# docker
+alias dc="docker-compose"
 
