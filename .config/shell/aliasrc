@@ -31,10 +31,8 @@ alias a="append"
 alias u="source update"
 
 # exa: Use as default list tool.
-alias l="exa"
-alias la="exa -a"
-alias ll="exa -l"
-alias lla="exa -la"
+alias l="exa -a"
+alias ll="exa -la"
 
 # tmux: Use UTF-8 in tmux.
 alias tmux="tmux -u"
