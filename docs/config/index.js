@@ -7,7 +7,7 @@ window.onload = function() {
 
 
 function setMeta() {
-    fetch ("https://davidheresy.de/assets/meta.html")
+    fetch ("https://davidheresy.de/config/meta.html")
         .then(response => response.text())
         .then(meta => {
             document.querySelector("head").innerHTML += meta;
@@ -22,7 +22,7 @@ function setTitle() {
 
 
 function setHeader() {
-    fetch ("https://davidheresy.de/assets/header.html")
+    fetch ("https://davidheresy.de/config/header.html")
         .then(response => response.text())
         .then(header => {
             let body = document.querySelector("body");
@@ -32,7 +32,7 @@ function setHeader() {
 
 
 function setFooter() {
-    fetch ("https://davidheresy.de/assets/footer.html")
+    fetch ("https://davidheresy.de/config/footer.html")
         .then(response => response.text())
         .then(footer => {
             let body = document.querySelector("body");
