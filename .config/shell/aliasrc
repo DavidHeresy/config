@@ -93,3 +93,5 @@ alias fo="newsboat -u $HOME/Privat/Lesezeichen/rss"
 # docker
 alias dc="docker-compose"
 
+# downloads
+alias audio-dl="youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0"
