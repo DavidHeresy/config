@@ -1,3 +1,6 @@
+# Use vi mode.
+bindkey -v
+
 # Load and export setting variables.
 set -a
 . $HOME/.config/shell/setting.env
