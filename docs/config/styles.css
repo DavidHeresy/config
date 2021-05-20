@@ -62,3 +62,4 @@ main p {
     text-align: left;
 }
 
+main tr td { text-align: left }
