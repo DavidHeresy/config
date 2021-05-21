@@ -5,8 +5,10 @@ a:hover { text-decoration: underline; }
 code {
     font-family: monospace, monospace;
     font-size: 0.9em;
-    background: lightsteelblue;
-    border-radius: 2px;
+    color: darkgoldenrod;
+    background: gainsboro;
+    border-radius: 3px;
+    padding: 1px;
 }
 
 header {
