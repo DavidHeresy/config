@@ -58,6 +58,7 @@ main h2 {
 }
 
 main h3 {
+    padding-top: 0.5em;
     font-weight: bolder;
     color: slategray;
     font-size: 1.1em;
