@@ -45,6 +45,7 @@ main {
 
 main h1 {
     padding-top: 1em;
+    padding-bottom: 0.25em;
     font-size: 2em;
 }
 
