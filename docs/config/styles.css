@@ -38,13 +38,11 @@ main {
 
 main h1 {
     padding-top: 1em;
-    padding-bottom: 0.25em;
     font-size: 2em;
 }
 
 main h2 {
     padding-top: 0.75em;
-    padding-bottom: 0.25em;
     font-size: 1.3em;
     color: slategray;
 }
@@ -56,7 +54,7 @@ main h3 {
 }
 
 main p {
-    padding-top: 0.75rem;
+    padding-top: 0.5rem;
     padding-bottom: 0.75rem;
     font-size: 1em;
 }
