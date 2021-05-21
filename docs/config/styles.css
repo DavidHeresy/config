@@ -49,18 +49,19 @@ main h1 {
     padding-top: 1em;
     padding-bottom: 0.25em;
     font-size: 2em;
+    color: dimgray;
 }
 
 main h2 {
     padding-top: 0.75em;
     font-size: 1.3em;
-    color: slategray;
+    color: dimgray;
 }
 
 main h3 {
     padding-top: 0.5em;
     font-weight: bolder;
-    color: slategray;
+    color: dimgray;
     font-size: 1.1em;
 }
 
