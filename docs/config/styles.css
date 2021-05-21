@@ -2,6 +2,8 @@ body { text-align: center; background-color: whitesmoke; }
 a { text-decoration: none; color: steelblue; }
 a:hover { text-decoration: underline; }
 
+code { font-family: monospace, monospace; }
+
 header {
     height: 7em;
     line-height: 7em;
