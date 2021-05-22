@@ -18,14 +18,14 @@ function populate(data) {
         links.innerHTML += `<p class="${attrs}"><a href="${url}">${name}</a></p>`;
         for (attr of attrs.split(" ")) {
             console.log(attr);
-            classes.add(attr);
+            tags.add(attr);
         }
     }
 
     console.log("foo");
     let filter = document.querySelector("#filter");
-    for (tag in Array.from(classes)) {
+    for (tag in Array.from(tags)) {
         console.log(tag);
-        tags.innerHTML += ` ${tag}`
+        filter.innerHTML += ` ${tag}`
     }
 }
