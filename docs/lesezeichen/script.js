@@ -24,6 +24,6 @@ function populate(data) {
     let filter = document.querySelector("#filter");
     for (tag of Array.from(tags)) {
         console.log(tag);
-        filter.innerHTML += ` ${tag}`
+        filter.innerHTML += `<button>${tag}</button>`
     }
 }
