@@ -38,5 +38,5 @@ function toggle(tag) {
         link.style.display = link.style.display == 'none' ? 'block' : 'none'
     }
     let button = document.querySelector(`#btn-${tag}`);
-    button.style.text-decoration = link.style.text-decoration == 'none' ? 'line-through' : 'none';
+    button.style.textDecoration = link.style.textDecoration == 'none' ? 'line-through' : 'none';
 }
