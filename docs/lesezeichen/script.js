@@ -17,7 +17,7 @@ function populate(data) {
         let url = data[4*i]
         let name = data[4*i +1]
         let attrs = data[4*i + 2]
-        links.innerHTML += `<p class="${attrs}" style="display: none"
+        links.innerHTML += `<p class="LINK ${attrs}" style="display: none"
             ><a href="${url}">${name}</a></p>`;
         for (attr of attrs.split(" ")) {
             tags.add(attr);
@@ -52,17 +52,20 @@ function toggle(tag) {
 }
 
 function evaluate() {
-    let links = document.querySelector("p");
+    let links = document.querySelectorAll(".LINK");
     for (link of links) {
-        let tags = link.className.split(" ");
-        let display = "none";
-        for (tag of tags) {
-            if (STATE[tag] == true) {
-                display = "block";
-                break;
-            }
+        link.style.display = "none";
+    }
+
+
+    for (tag in STATE) {
+        if (STATE[tag] == false) {
+            continue;
         }
-        link.style.display = display;
+        let links = document.querySelectorAll(`.${tag}`);
+        for (link of links) {
+            link.style.display = "block";
+        }
     }
 }
 
