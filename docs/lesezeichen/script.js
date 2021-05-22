@@ -22,5 +22,7 @@ function populate(data) {
     }
 
     let tags = document.querySelector("#tags");
-    tags.innerHTML = classes;
+    for (tag in classes) {
+        tags.innerHTML += ` ${tag}`
+    }
 }
