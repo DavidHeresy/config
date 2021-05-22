@@ -1,0 +1,28 @@
+https://betterexplained.com/articles/intuitive-convolution/
+    Better Explained: Intuitive Guide to Convolution
+    learning mathematik
+
+https://venam.nixers.net/blog/unix/2021/02/07/audio-stack.html
+    Venam's Blog: Making Sense of The Audio Stack on Unix
+    blog linux
+
+https://fifty.user-interface.io/50_ui_tips.pdf
+    Victor Ponamariov: 50 Tips to Improve User Interface
+    coding ui
+
+https://github.com/fonsp/Pluto.jl
+    GitHub: fonsp / Pluto.jl
+    coding notebook julia
+
+https://guide.elm-lang.org/
+    Elm: Guide / An Introduction to Elm
+    coding browser elm
+
+https://harpers.org/archive/2021/04/lost-in-thought-psychological-risks-of-meditation/
+    Harper's Magazine: David Kortava / Lost in Thought
+    blog meditation
+
+https://www.youtube.com/watch?v=DTvS9lvRxZ8
+    YouTube: Mark Rober / Backyard Squirrel Maze 2.0 - The Walnut Heist
+    video unterhaltung
+
