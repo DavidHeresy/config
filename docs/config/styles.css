@@ -1,6 +1,6 @@
 body { text-align: center; background-color: whitesmoke; }
 
-a { text-decoration: none; color: cornflowerblue; }
+a { text-decoration: none; color: steelblue; }
 a:hover { text-decoration: underline; }
 
 code {
@@ -50,20 +50,20 @@ main h1 {
     padding-top: 1em;
     padding-bottom: 0.25em;
     font-size: 2em;
-    color: dimgray;
+    color: darkslategray;
 }
 
 main h2 {
     padding-top: 0.75em;
     font-size: 1.3em;
-    color: dimgray;
+    color: darkslategray;
 }
 
 main h3 {
     padding-top: 0.5em;
-    font-weight: bolder;
-    color: dimgray;
     font-size: 1.1em;
+    color: darkslategray;
+    font-weight: bolder;
 }
 
 main p {
