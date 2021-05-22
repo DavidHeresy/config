@@ -20,9 +20,9 @@ https://guide.elm-lang.org/
 
 https://harpers.org/archive/2021/04/lost-in-thought-psychological-risks-of-meditation/
     Harper's Magazine: David Kortava / Lost in Thought
-    blog meditation
+    article meditation
 
 https://www.youtube.com/watch?v=DTvS9lvRxZ8
     YouTube: Mark Rober / Backyard Squirrel Maze 2.0 - The Walnut Heist
-    video unterhaltung
+    video entertainment
 
