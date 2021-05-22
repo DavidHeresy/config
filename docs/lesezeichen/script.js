@@ -25,7 +25,6 @@ function populate(data) {
     let filter = document.querySelector("#filter");
 
     for (tag of Array.from(tags)) {
-        console.log(tag);
         filter.innerHTML += `<button id="btn-${tag}"
             onclick="toggle('${tag}')"
             >${tag}</button> `
@@ -38,5 +37,6 @@ function toggle(tag) {
         link.style.display = link.style.display == 'none' ? 'block' : 'none'
     }
     let button = document.querySelector(`#btn-${tag}`);
+    console.log(button);
     button.style.textDecoration = link.style.textDecoration == 'none' ? 'line-through' : 'none';
 }
