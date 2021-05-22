@@ -34,7 +34,7 @@ footer {
     border-top: 1px solid slategray;
 }
 
-footer a { color: darkslategray; }
+footer a { color: slategray; }
 
 main {
     min-height: calc(100vh - 17em - 3px);
