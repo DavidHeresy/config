@@ -26,11 +26,8 @@ function populate(data) {
     for (tag of Array.from(tags)) {
         console.log(tag);
         filter.innerHTML += `<button id="btn-${tag}"
-            onclick="() => ( toogle('${tag}') )"
+            onclick="alert('${tag}')"
             >${tag}</button> `
     }
 }
 
-function toogle(tag) {
-    alert(tag);
-}
