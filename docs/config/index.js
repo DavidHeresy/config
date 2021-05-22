@@ -3,6 +3,7 @@ window.onload = function() {
     setTitle();
     setHeader();
     setFooter();
+    hook();
 }
 
 

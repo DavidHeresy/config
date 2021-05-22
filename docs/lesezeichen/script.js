@@ -1,4 +1,4 @@
-window.onload = function() {
+function hook() {
     fetch ("./lesezeichen.txt")
         .then(response => response.text())
         .then(lesezeichen => {
