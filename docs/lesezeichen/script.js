@@ -35,9 +35,20 @@ function populate(data) {
 
 function toggle(tag) {
     let links = document.querySelectorAll(`.${tag}`);
-    for (link of links) {
-        link.style.display = link.style.display == 'none' ? 'block' : 'none'
-    }
     let button = document.querySelector(`#btn-${tag}`);
-    button.style.textDecoration = button.style.textDecoration == 'none' ? 'line-through' : 'none';
+
+    if (button.style.textDecoration == "none") {
+        let decoration = "line-through";
+        let display = "none";
+    }
+
+    else {
+        let decoration = "none";
+        let display = "block";
+    }
+    
+    button.style.textDecoration = decoration;
+    for (link of links) {
+        link.style.display = display;
+    }
 }
