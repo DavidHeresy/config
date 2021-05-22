@@ -26,24 +26,20 @@ nav {
     line-height: 3em;
     color: white;
     border-top: 1px solid slategray;
-    /* border-bottom: 1px solid slategray; */
-    background: navy;
+    border-bottom: 1px solid slategray;
 }
-
-nav a { color: white; }
 
 footer {
     height: 3em;
     line-height: 3em;
     color: slategray;
-    /* border-top: 1px solid slategray; */
+    border-top: 1px solid slategray;
 }
 
 footer a { color: slategray; }
 
 main {
-    /* min-height: calc(100vh - 17em - 3px); */
-    min-height: calc(100vh - 17em);
+    min-height: calc(100vh - 17em - 3px);
     max-width: clamp(20em, 60vw, 60em);
     margin: 2em auto;
     padding: 0 2vw;
