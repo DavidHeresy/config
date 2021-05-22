@@ -23,6 +23,7 @@ function populate(data) {
     tags.delete("");
 
     let filter = document.querySelector("#filter");
+
     for (tag of Array.from(tags)) {
         console.log(tag);
         filter.innerHTML += `<button id="btn-${tag}"
@@ -36,4 +37,6 @@ function toggle(tag) {
     for (link of links) {
         link.style.display = link.style.display == 'none' ? 'block' : 'none'
     }
+    let button = document.querySelector(`#btn-${tag}`);
+    button.style.textdecoration = link.style.textdecoration == 'none' ? 'line-through' : 'none';
 }
