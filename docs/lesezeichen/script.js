@@ -12,7 +12,7 @@ function populate(data) {
     let classes = new Set();
 
     for(i = 0; i < (data.length / 4) - 1; i++) {
-        let uri = data[4*i]
+        let url = data[4*i]
         let name = data[4*i +1]
         let attrs = data[4*i + 2]
         links.innerHTML += `<p><a href="${url}" class="${attrs}">${name}</a></p>`;
