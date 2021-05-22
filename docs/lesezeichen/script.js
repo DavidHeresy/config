@@ -33,7 +33,7 @@ function populate(data) {
 
 function toggle(tag) {
     let links = document.querySelectorAll(`.${tag}`);
-    for (link in links) {
+    for (link of links) {
         link.style.display = link.style.display == 'none' ? 'block' : 'none'
     }
 }
