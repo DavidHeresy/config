@@ -9,21 +9,21 @@ function hook() {
 
 function populate(data) {
     let links = document.querySelector("#links");
-    let classes = new Set();
+    let tags = new Set();
 
     for(i = 0; i < (data.length / 4) - 1; i++) {
         let url = data[4*i]
         let name = data[4*i +1]
         let attrs = data[4*i + 2]
         links.innerHTML += `<p class="${attrs}"><a href="${url}">${name}</a></p>`;
-        for (attr in Array(attrs.split(" "))) {
+        for (word of attrs.split(" ")) {
             console.log(attr);
             classes.add(attr);
         }
     }
 
     console.log("foo");
-    let tags = document.querySelector("#tags");
+    let filter = document.querySelector("#filter");
     for (tag in Array.from(classes)) {
         console.log(tag);
         tags.innerHTML += ` ${tag}`
