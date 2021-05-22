@@ -24,10 +24,10 @@ header h1 { font-size: 1em; color: darkslategray; }
 nav {
     height: 3em;
     line-height: 3em;
-    color: slategray;
+    color: white;
     border-top: 1px solid slategray;
     /* border-bottom: 1px solid slategray; */
-    background: steelblue;
+    background: navy;
 }
 
 nav a { color: white; }
