@@ -17,14 +17,12 @@ function populate(data) {
         let attrs = data[4*i + 2]
         links.innerHTML += `<p class="${attrs}"><a href="${url}">${name}</a></p>`;
         for (attr of attrs.split(" ")) {
-            console.log(attr);
             tags.add(attr);
         }
     }
 
-    console.log("foo");
     let filter = document.querySelector("#filter");
-    for (tag in Array.from(tags)) {
+    for (tag of Array.from(tags)) {
         console.log(tag);
         filter.innerHTML += ` ${tag}`
     }
