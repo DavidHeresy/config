@@ -20,6 +20,7 @@ function populate(data) {
             tags.add(attr);
         }
     }
+    tags.delete(" ");
 
     let filter = document.querySelector("#filter");
     for (tag of Array.from(tags)) {
