@@ -1,3 +1,5 @@
+var STATE;
+
 function hook() {
     fetch ("./lesezeichen.txt")
         .then(response => response.text())
@@ -26,6 +28,7 @@ function populate(data) {
     let filter = document.querySelector("#filter");
 
     for (tag of Array.from(tags)) {
+        STATE[tag] = false;
         filter.innerHTML += `<button id="btn-${tag}"
             style="text-decoration: line-through"
             onclick="toggle('${tag}')"
@@ -34,21 +37,32 @@ function populate(data) {
 }
 
 function toggle(tag) {
-    let links = document.querySelectorAll(`.${tag}`);
     let button = document.querySelector(`#btn-${tag}`);
 
-    if (button.style.textDecoration == "none") {
-        let decoration = "line-through";
-        let display = "none";
+    if (button.style.textDecoration == "line-through") {
+        STATE[tag] = true;
+        button.style.textDecoration = "none";
     }
-
     else {
-        let decoration = "none";
-        let display = "block";
+        STATE[tag] = false;
+        button.style.textDecoration = "line-through";
     }
     
-    button.style.textDecoration = decoration;
+    evaluate();
+}
+
+function evaluate() {
+    let links = document.querySelector("p");
     for (link of links) {
+        let tags = link.className.split(" ");
+        let display = "none";
+        for (tag of tags) {
+            if (STATE[tag] == true) {
+                display = "block";
+                break;
+            }
+        }
         link.style.display = display;
     }
 }
+
