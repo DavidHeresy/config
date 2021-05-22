@@ -15,14 +15,14 @@ function populate(data) {
         let url = data[4*i]
         let name = data[4*i +1]
         let attrs = data[4*i + 2]
-        links.innerHTML += `<p><a href="${url}" class="${attrs}">${name}</a></p>`;
+        links.innerHTML += `<p class="${attrs}"><a href="${url}">${name}</a></p>`;
         for (attr in attrs.split(" ")) {
             classes.add(attr);
         }
     }
 
     let tags = document.querySelector("#tags");
-    for (const tag of classes) {
+    for (tag in Array.from(classes)) {
         tags.innerHTML += ` ${tag}`
     }
 }
