@@ -1,4 +1,4 @@
-var STATE;
+var STATE = {};
 
 function hook() {
     fetch ("./lesezeichen.txt")
