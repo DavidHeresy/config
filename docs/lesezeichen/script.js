@@ -16,7 +16,7 @@ function populate(data) {
         let name = data[4*i +1]
         let attrs = data[4*i + 2]
         links.innerHTML += `<p class="${attrs}"><a href="${url}">${name}</a></p>`;
-        for (word of attrs.split(" ")) {
+        for (attr of attrs.split(" ")) {
             console.log(attr);
             classes.add(attr);
         }
