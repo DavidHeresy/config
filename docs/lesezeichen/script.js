@@ -15,7 +15,8 @@ function populate(data) {
         let url = data[4*i]
         let name = data[4*i +1]
         let attrs = data[4*i + 2]
-        links.innerHTML += `<p class="${attrs}"><a href="${url}">${name}</a></p>`;
+        links.innerHTML += `<p class="${attrs}" style="display: none"
+            ><a href="${url}">${name}</a></p>`;
         for (attr of attrs.split(" ")) {
             tags.add(attr);
         }
@@ -26,8 +27,9 @@ function populate(data) {
 
     for (tag of Array.from(tags)) {
         filter.innerHTML += `<button id="btn-${tag}"
+            style="text-decoration: line-through"
             onclick="toggle('${tag}')"
-            >${tag}</button> `
+            >${tag}</button> `;
     }
 }
 
