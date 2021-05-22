@@ -25,6 +25,12 @@ function populate(data) {
     let filter = document.querySelector("#filter");
     for (tag of Array.from(tags)) {
         console.log(tag);
-        filter.innerHTML += `<button>${tag}</button>`
+        filter.innerHTML += `<button id="btn-${tag}"
+            onclick="() => ( toogle(${tag}) )"
+            >${tag}</button> `
     }
+}
+
+function toogle(tag) {
+    alert(tag);
 }
