@@ -26,8 +26,14 @@ function populate(data) {
     for (tag of Array.from(tags)) {
         console.log(tag);
         filter.innerHTML += `<button id="btn-${tag}"
-            onclick="alert('${tag}')"
+            onclick="toggle('${tag}')"
             >${tag}</button> `
     }
 }
 
+function toggle(tag) {
+    let links = document.querySelectorAll(`.${tag}`);
+    for (link in links) {
+        link.style.display = link.style.display == 'none' ? 'block' : 'none'
+    }
+}
