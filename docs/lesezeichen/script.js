@@ -8,10 +8,19 @@ function hook() {
 }
 
 function populate(data) {
-    let tags = document.querySelector("#tags");
     let links = document.querySelector("#links");
-    tags.innerHTML = "Tags";
+    let classes = new Set();
+
     for(i = 0; i < (data.length / 4) - 1; i++) {
-        links.innerHTML += `<p><a href=${data[4*i]}>${data[4*i+1]}</a></p>`;
+        let uri = data[4*i]
+        let name = data[4*i +1]
+        let attrs = data[4*i + 2]
+        links.innerHTML += `<p><a href="${url}" class="${attrs}">${name}</a></p>`;
+        for (attr in attrs.split(" ")) {
+            classes.add(attr);
+        }
     }
+
+    let tags = document.querySelector("#tags");
+    tags.innerHTML = classes;
 }
