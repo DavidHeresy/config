@@ -19,7 +19,7 @@ header {
     font-weight: bold;
 }
 
-header h1 { font-size: 1em; color: slategray; }
+header h1 { font-size: 1em; color: darkslategray; }
 
 nav {
     height: 3em;
@@ -36,7 +36,7 @@ footer {
     border-top: 1px solid slategray;
 }
 
-footer a { color: slategray }
+footer a { color: darkslategray; }
 
 main {
     min-height: calc(100vh - 17em - 3px);
