@@ -37,7 +37,7 @@ https://www.portabledevapps.net
 https://enes.in/sorted-colors
     css browser ui
 
-https://hpcvscorona.dlr.de/#
+https://hpcvscorona.dlr.de
     covid data
 
 https://venam.nixers.net/blog/unix/2021/02/07/audio-stack.html
