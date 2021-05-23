@@ -1,32 +1,76 @@
 https://betterexplained.com/articles/intuitive-convolution/
     Better Explained: Intuitive Guide to Convolution
-    learning mathematik
+    lernen mathematik buch
 
 https://venam.nixers.net/blog/unix/2021/02/07/audio-stack.html
     Venam's Blog: Making Sense of The Audio Stack on Unix
-    blog linux
+    artikel linux code
 
 https://fifty.user-interface.io/50_ui_tips.pdf
     Victor Ponamariov: 50 Tips to Improve User Interface
-    coding ui
+    code ui buch
 
 https://github.com/fonsp/Pluto.jl
     GitHub: fonsp / Pluto.jl
-    coding notebook julia
+    code notebook julia
 
 https://guide.elm-lang.org/
     Elm: Guide / An Introduction to Elm
-    coding browser elm
+    code browser elm
 
 https://harpers.org/archive/2021/04/lost-in-thought-psychological-risks-of-meditation/
     Harper's Magazine: David Kortava / Lost in Thought
-    article meditation
+    artikel meditation psyche
 
 https://www.youtube.com/watch?v=DTvS9lvRxZ8
     YouTube: Mark Rober / Backyard Squirrel Maze 2.0 - The Walnut Heist
-    video entertainment
+    video unterhaltung youtube
 
 https://enes.in/sorted-colors/
     CSS: Sorted Colors
-    coding browser ui
+    css browser ui
 
+https://www.portabledevapps.net/
+    PortableDevApps
+    windows apps computer
+
+https://stackoverflow.com/
+    StackOverflow
+    code suchmaschine jobs
+
+https://duckduckgo.com/
+    DuckDuckGo
+    suchmaschine browser
+
+https://www.w3schools.com/
+    W3 Schools
+    code lernen internet
+
+http://www.paulgraham.com/makersschedule.html
+    Paul Graham: Maker's Schedule, Manager's Schedule
+    english jobs artikel code
+
+https://margint.blog/2020/10/07/some-thoughts-on-the-principal-role/
+    Mikio Braun: Some Thoughts on the Principal Role
+    english artikel jobs code
+
+https://www.thekua.com/atwork/2019/02/the-trident-model-of-career-development/
+    Patrick Kua: The Trident Model of Carrer Development
+    english artikle jobs
+
+https://www.galiglobal.com/blog/2021/20210313-The-principal-role.html
+    Antón Rodríguez: My thoughts about the Principal role
+    english artikle jobs
+
+https://every.to/napkin-math/you-probably-shouldn-t-work-at-a-startup-9387b632-345c-4a22-bac0-3cb92f0eecf1##
+    Evan Armstrong: You Probably Shouldn't Work at a Startup
+    english artikle jobs
+
+https://www.metabase.com/learn/data-diet/analytics/data-model-mistakes.html
+    Learn Metabase: Common data model mistakes made by startups
+    artikel english code
+
+https://www.aacc.org/cln/articles/2020/april/why-clinical-laboratorians-should-embrace-the-r-programming-language
+    Shannong Haymond & Stephen Master: Why Clinical Laboratorians Should Embrace the R Programming Language
+    artikel english R medizin
+    
