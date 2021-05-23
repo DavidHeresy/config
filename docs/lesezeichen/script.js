@@ -30,7 +30,7 @@ function populate(data) {
     for (tag of Array.from(tags)) {
         STATE[tag] = false;
         filter.innerHTML += `<button id="btn-${tag}"
-            style="text-decoration: line-through"
+            class="inactive"
             onclick="toggle('${tag}')"
             >${tag}</button> `;
     }
@@ -45,7 +45,7 @@ function toggle(tag) {
     }
     else {
         STATE[tag] = false;
-        button.className = "";
+        button.className = "inactive";
     }
     
     evaluate();
