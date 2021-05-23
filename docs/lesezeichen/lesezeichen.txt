@@ -1,3 +1,7 @@
+https://devdocs.io/
+    DevDocs: Offline Development Documentation
+    code docs browser
+
 https://betterexplained.com/articles/intuitive-convolution/
     Better Explained: Intuitive Guide to Convolution
     lernen mathematik buch
@@ -73,4 +77,8 @@ https://www.metabase.com/learn/data-diet/analytics/data-model-mistakes.html
 https://www.aacc.org/cln/articles/2020/april/why-clinical-laboratorians-should-embrace-the-r-programming-language
     Shannong Haymond & Stephen Master: Why Clinical Laboratorians Should Embrace the R Programming Language
     artikel english R medizin
-    
+   
+https://hpcvscorona.dlr.de/#/
+    HZI & DLR: SARS-CoV-2 Reproduktionszahlen innerhalb Deutschlands
+    covid data deutsch
+
