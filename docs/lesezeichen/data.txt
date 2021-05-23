@@ -1,49 +1,49 @@
 https://fifty.user-interface.io/50_ui_tips.pdf
     code ui
 
-https://betterexplained.com/articles/intuitive-convolution/
+https://betterexplained.com/articles/intuitive-convolution
     tutorial math
 
-https://stackoverflow.com/
+https://stackoverflow.com
     code suchmaschine jobs
 
-https://emojipedia.org/
+https://emojipedia.org
     suchmaschine
 
-https://duckduckgo.com/
+https://duckduckgo.com
     suchmaschine browser
 
-https://caniuse.com/
+https://caniuse.com
     suchmaschine browser
 
-https://www.w3schools.com/
+https://www.w3schools.com
     code tutorial browser docs
 
 https://github.com/fonsp/Pluto.jl
     code notebook julia
 
-https://devdocs.io/
+https://devdocs.io
     docs browser
 
-https://developer.mozilla.org/en-US/
+https://developer.mozilla.org/en-US
     docs browser
 
-https://guide.elm-lang.org/
+https://guide.elm-lang.org
     code browser elm tutorial
 
-https://www.portabledevapps.net/
+https://www.portabledevapps.net
     windows apps computer
 
-https://enes.in/sorted-colors/
+https://enes.in/sorted-colors
     css browser ui
 
-https://hpcvscorona.dlr.de/#/
+https://hpcvscorona.dlr.de/#
     covid data
 
 https://venam.nixers.net/blog/unix/2021/02/07/audio-stack.html
     blog linux code
 
-https://harpers.org/archive/2021/04/lost-in-thought-psychological-risks-of-meditation/
+https://harpers.org/archive/2021/04/lost-in-thought-psychological-risks-of-meditation
     blog meditation psyche
 
 https://www.youtube.com/watch?v=DTvS9lvRxZ8
@@ -52,10 +52,10 @@ https://www.youtube.com/watch?v=DTvS9lvRxZ8
 http://www.paulgraham.com/makersschedule.html
     english jobs blog code
 
-https://margint.blog/2020/10/07/some-thoughts-on-the-principal-role/
+https://margint.blog/2020/10/07/some-thoughts-on-the-principal-role
     english blog jobs code
 
-https://www.thekua.com/atwork/2019/02/the-trident-model-of-career-development/
+https://www.thekua.com/atwork/2019/02/the-trident-model-of-career-development
     english blog jobs
 
 https://www.galiglobal.com/blog/2021/20210313-The-principal-role.html

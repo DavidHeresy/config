@@ -14,6 +14,7 @@ function init(response) {
     for(i = 0; i < (data.length / 3) - 1; i++) {
         let url = data[3*i]
         let name = url.replace(/^https?:\/\//, '');
+        name = name.replace(/\// ,' / ');
         let attrs = data[3*i + 1]
         links.innerHTML += `<p class="LINK ${attrs}"><a href="${url}">${name}</a></p>`;
         for (attr of attrs.split(" ")) {
