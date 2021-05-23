@@ -41,11 +41,11 @@ function toggle(tag) {
 
     if (button.style.textDecoration == "line-through") {
         STATE[tag] = true;
-        button.style.textDecoration = "none";
+        button.className = "active";
     }
     else {
         STATE[tag] = false;
-        button.style.textDecoration = "line-through";
+        button.className = "";
     }
     
     evaluate();
@@ -54,17 +54,17 @@ function toggle(tag) {
 function evaluate() {
     let links = document.querySelectorAll(".LINK");
     for (link of links) {
-        link.style.display = "none";
+        link.style.display = "block";
     }
 
 
     for (tag in STATE) {
-        if (STATE[tag] == false) {
+        if (STATE[tag] == true) {
             continue;
         }
         let links = document.querySelectorAll(`.${tag}`);
         for (link of links) {
-            link.style.display = "block";
+            link.style.display = "none";
         }
     }
 }
