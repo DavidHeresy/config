@@ -1,11 +1,44 @@
+https://fifty.user-interface.io/50_ui_tips.pdf
+    code ui
+
 https://betterexplained.com/articles/intuitive-convolution/
-    lernen mathematik buch
+    tutorial math
+
+https://stackoverflow.com/
+    code suchmaschine jobs
+
+https://duckduckgo.com/
+    suchmaschine browser
+
+https://caniuse.com/
+    suchmaschine browser
+
+https://www.w3schools.com/
+    code tutorial browser docs
+
+https://github.com/fonsp/Pluto.jl
+    code notebook julia
+
+https://devdocs.io/
+    docs browser
+
+https://developer.mozilla.org/en-US/
+    docs browser
+
+https://guide.elm-lang.org/
+    code browser elm tutorial
+
+https://www.portabledevapps.net/
+    windows apps computer
+
+https://enes.in/sorted-colors/
+    css browser ui
+
+https://hpcvscorona.dlr.de/#/
+    covid data
 
 https://venam.nixers.net/blog/unix/2021/02/07/audio-stack.html
     blog linux code
-
-https://fifty.user-interface.io/50_ui_tips.pdf
-    code ui buch
 
 https://harpers.org/archive/2021/04/lost-in-thought-psychological-risks-of-meditation/
     blog meditation psyche

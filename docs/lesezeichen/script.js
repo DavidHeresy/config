@@ -1,5 +1,11 @@
 var STATE = {};
 
+function hook() {
+    fetch ("./data.txt")
+        .then(res => res.text())
+        .then(res => init(res));
+}
+
 function init(response) {
     let data = response.split("\n"); 
     let links = document.querySelector("#links");
