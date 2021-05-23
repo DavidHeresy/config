@@ -5,7 +5,7 @@ a:hover { text-decoration: underline; }
 
 button { margin: 4px; }
 button.active { background: darkgoldenrod; }
-button.inactive { background: silver; }
+button.inactive { background: gainsboro; }
 
 code {
     font-family: monospace, monospace;
