@@ -15,17 +15,19 @@ function init(response) {
         let url = data[3*i]
         let name = url.replace(/^https?:\/\//, '');
         let attrs = data[3*i + 1]
-        links.innerHTML += `<p class="LINK ${attrs}"
-            ><a href="${url}">${url}</a></p>`;
+        links.innerHTML += `<p class="LINK ${attrs}"><a href="${url}">${name}</a></p>`;
         for (attr of attrs.split(" ")) {
+            console.log(attr);
             tags.add(attr);
         }
     }
+
     tags.delete("");
 
     let filter = document.querySelector("#filter");
 
     for (tag of Array.from(tags)) {
+        console.log(tag);
         STATE[tag] = false;
         filter.innerHTML += `<button id="btn-${tag}"
             class="inactive"
