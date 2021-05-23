@@ -32,5 +32,8 @@ https://www.metabase.com/learn/data-diet/analytics/data-model-mistakes.html
     blog english code
 
 https://www.aacc.org/cln/articles/2020/april/why-clinical-laboratorians-should-embrace-the-r-programming-language
-    blog english R medizin
+    blog english medizin
+
+https://nav.al
+    podcast english
 

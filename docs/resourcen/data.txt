@@ -4,6 +4,9 @@ https://stackoverflow.com/
 https://duckduckgo.com/
     suchmaschine browser
 
+https://caniuse.com/
+    suchmaschine browser internet
+
 https://www.w3schools.com/
     code lernen internet browser
 
