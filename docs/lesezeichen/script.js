@@ -17,6 +17,7 @@ function init(response) {
         name = name.replace(/\//, ': ');
         name = name.replace(/\//g, ' / ');
         name = name.replace(/-/g, ' ');
+        name = name.replace(/_/g, ' ');
         let attrs = data[3*i + 1]
         links.innerHTML += `<p class="LINK ${attrs}"><a href="${url}">${name}</a></p>`;
         for (attr of attrs.split(" ")) {
