@@ -1,24 +1,15 @@
 var STATE = {};
 
-function hook() {
-    fetch ("./lesezeichen.txt")
-        .then(response => response.text())
-        .then(response => {
-            let data = response.split("\n"); 
-            populate(data);
-        });
-}
-
-function populate(data) {
+function init(response) {
+    let data = response.split("\n"); 
     let links = document.querySelector("#links");
     let tags = new Set();
 
-    for(i = 0; i < (data.length / 4) - 1; i++) {
-        let url = data[4*i]
-        let name = data[4*i +1]
-        let attrs = data[4*i + 2]
+    for(i = 0; i < (data.length / 3) - 1; i++) {
+        let url = data[3*i]
+        let attrs = data[3*i + 2]
         links.innerHTML += `<p class="LINK ${attrs}"
-            ><a href="${url}">${name}</a></p>`;
+            ><a href="${url}">${url}</a></p>`;
         for (attr of attrs.split(" ")) {
             tags.add(attr);
         }
