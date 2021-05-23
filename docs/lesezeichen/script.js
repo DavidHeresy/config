@@ -39,7 +39,7 @@ function populate(data) {
 function toggle(tag) {
     let button = document.querySelector(`#btn-${tag}`);
 
-    if (button.style.textDecoration == "line-through") {
+    if (button.className == "inactive") {
         STATE[tag] = true;
         button.className = "active";
     }
