@@ -3,7 +3,14 @@ body { text-align: center; background-color: whitesmoke; }
 a { text-decoration: none; color: steelblue; }
 a:hover { text-decoration: underline; }
 
-button { margin: 4px; }
+button { 
+    margin: 4px;
+    padding: 2px;
+    border: none;
+    border-radius: 2px;
+    font-family: monospace, monospace;
+}
+
 button.active { background: goldenrod; }
 button.inactive { background: gainsboro; }
 
