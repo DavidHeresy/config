@@ -17,7 +17,6 @@ function init(response) {
         let attrs = data[3*i + 1]
         links.innerHTML += `<p class="LINK ${attrs}"><a href="${url}">${name}</a></p>`;
         for (attr of attrs.split(" ")) {
-            console.log(attr);
             tags.add(attr);
         }
     }
@@ -27,7 +26,6 @@ function init(response) {
     let filter = document.querySelector("#filter");
 
     for (tag of Array.from(tags)) {
-        console.log(tag);
         STATE[tag] = false;
         filter.innerHTML += `<button id="btn-${tag}"
             class="inactive"
