@@ -1,5 +1,47 @@
 https://fifty.user-interface.io/50_ui_tips.pdf
-    code ui
+    english code ui
+
+https://androidfilehost.com
+    apps suchmaschine
+
+https://befunddolmetscher.de
+    deutsch medizin suchmaschine
+
+https://www.daserste.de/unterhaltung/serie/babylon-berlin
+    deutsch unterhaltung video
+
+https://www.arte.tv/de
+    deutsch unterhaltung video
+
+https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6
+    covid data
+
+http://andrewscala.com/vimscript
+    english blog code lernen
+
+https://www.aerzteblatt.de
+    deutsch medizin blog
+
+https://pubmed.ncbi.nlm.nih.gov
+    english medizin suchmaschine
+
+https://aatishb.com/covidtrends
+    data covid
+
+https://www.adminschoice.com/crontab-quick-reference
+    english code blog
+
+https://timdaub.github.io/2020/02/19/wasm-synth
+    english code musik blog
+
+https://www.bachvereniging.nl/en/allofbach
+    musik unterhaltung
+
+https://www.alias.dev
+    code data zukunft
+
+https://news.ycombinator.com
+    english zukunft blog english
 
 https://waitlist.y.at
     zukunft crypto
@@ -71,7 +113,7 @@ https://enes.in/sorted-colors
     css browser ui
 
 https://hpcvscorona.dlr.de
-    covid data
+    covid data deutsch
 
 https://venam.nixers.net/blog/unix/2021/02/07/audio-stack.html
     blog linux code
