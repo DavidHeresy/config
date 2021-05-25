@@ -1,8 +1,20 @@
 https://fifty.user-interface.io/50_ui_tips.pdf
     code ui
 
+https://www.alanzucconi.com/2015/12/16/color-blindness/
+    blog english code ui vision
+
+http://backspace.ai/
+    code zukunft
+
+https://github.com/commaai/openpilot
+    code verkehr zukunft
+
+https://www.albertmartin.de/altgriechisch/
+    suchmaschine sprache
+
 https://betterexplained.com/articles/intuitive-convolution
-    tutorial math
+    lernen math
 
 https://stackoverflow.com
     code suchmaschine jobs
@@ -10,17 +22,23 @@ https://stackoverflow.com
 https://emojipedia.org
     suchmaschine
 
+https://favicon.io/
+    browser code ui img
+
 https://duckduckgo.com
     suchmaschine browser
+
+https://www.boringcompany.com/
+    verkehr zukunft
 
 https://caniuse.com
     suchmaschine browser
 
 https://www.w3schools.com
-    code tutorial browser docs
+    code lernen browser docs
 
 https://github.com/fonsp/Pluto.jl
-    code notebook julia
+    code notebook
 
 https://devdocs.io
     docs browser
@@ -29,7 +47,7 @@ https://developer.mozilla.org/en-US
     docs browser
 
 https://guide.elm-lang.org
-    code browser elm tutorial
+    code browser lernen
 
 https://www.portabledevapps.net
     windows apps computer
@@ -58,7 +76,7 @@ https://margint.blog/2020/10/07/some-thoughts-on-the-principal-role
 https://www.thekua.com/atwork/2019/02/the-trident-model-of-career-development
     english blog jobs
 
-https://www.galiglobal.com/blog/2021/20210313-The-principal-role.html
+https://www.galiglobal.com/blog/2021/20210313-The-principal-role
     english blog jobs
 
 https://every.to/napkin-math/you-probably-shouldn-t-work-at-a-startup-9387b632-345c-4a22-bac0-3cb92f0eecf1##
