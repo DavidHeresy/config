@@ -1,16 +1,16 @@
 https://fifty.user-interface.io/50_ui_tips.pdf
     code ui
 
-https://www.alanzucconi.com/2015/12/16/color-blindness/
+https://www.alanzucconi.com/2015/12/16/color-blindness
     blog english code ui vision
 
-http://backspace.ai/
+http://backspace.ai
     code zukunft
 
 https://github.com/commaai/openpilot
     code verkehr zukunft
 
-https://www.albertmartin.de/altgriechisch/
+https://www.albertmartin.de/altgriechisch
     suchmaschine sprache
 
 https://betterexplained.com/articles/intuitive-convolution
@@ -28,7 +28,7 @@ https://favicon.io/
 https://duckduckgo.com
     suchmaschine browser
 
-https://www.boringcompany.com/
+https://www.boringcompany.com
     verkehr zukunft
 
 https://caniuse.com
