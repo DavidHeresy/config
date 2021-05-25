@@ -1,6 +1,9 @@
 https://fifty.user-interface.io/50_ui_tips.pdf
     code ui
 
+https://www.1001freefonts.com
+    suchmaschine code ui
+
 https://www.alanzucconi.com/2015/12/16/color-blindness
     blog english code ui vision
 
@@ -50,7 +53,7 @@ https://guide.elm-lang.org
     code browser lernen
 
 https://www.portabledevapps.net
-    windows apps computer
+    suchmaschine code
 
 https://enes.in/sorted-colors
     css browser ui
