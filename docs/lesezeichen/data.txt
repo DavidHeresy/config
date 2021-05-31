@@ -4,6 +4,12 @@ https://fifty.user-interface.io/50_ui_tips.pdf
 https://www.feynmanlectures.caltech.edu/flptapes.html
     english lernen
 
+https://ninfex.com
+    suchmaschine browser
+
+https://12factor.net
+    code lernen
+
 https://unixgame.io/unix50
     lernen linux code
 
