@@ -47,6 +47,7 @@ let g:airline_theme='solarized_flood'
 set tabstop=4
 set shiftwidth=4
 set expandtab
+" autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Move fast in a line.
 nnoremap j gj
